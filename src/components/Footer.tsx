@@ -1,0 +1,113 @@
+
+import React from 'react';
+import { Heart, Code, Coffee } from 'lucide-react';
+
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="bg-secondary/30 border-t border-border">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid md:grid-cols-3 gap-8">
+          {/* Brand */}
+          <div>
+            <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent mb-4">
+              Animesh Singh
+            </h3>
+            <p className="text-foreground/70 mb-4">
+              Full Stack Developer passionate about creating beautiful and functional web applications.
+            </p>
+            <div className="flex items-center space-x-2 text-foreground/60">
+              <span>Made with</span>
+              <Heart size={16} className="text-red-500" />
+              <span>and</span>
+              <Code size={16} className="text-blue-500" />
+              <span>and lots of</span>
+              <Coffee size={16} className="text-yellow-600" />
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h4 className="font-semibold text-foreground mb-4">Quick Links</h4>
+            <div className="space-y-2">
+              {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((link) => (
+                <button
+                  key={link}
+                  onClick={() => {
+                    const element = document.getElementById(link.toLowerCase());
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                  className="block text-foreground/70 hover:text-foreground transition-colors duration-300"
+                >
+                  {link}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h4 className="font-semibold text-foreground mb-4">Let's Connect</h4>
+            <div className="space-y-2">
+              <a
+                href="mailto:animesh.singh@example.com"
+                className="block text-foreground/70 hover:text-foreground transition-colors duration-300"
+              >
+                animesh.singh@example.com
+              </a>
+              <a
+                href="tel:+919876543210"
+                className="block text-foreground/70 hover:text-foreground transition-colors duration-300"
+              >
+                +91 98765 43210
+              </a>
+              <p className="text-foreground/70">New Delhi, India</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="border-t border-border mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-foreground/60 text-sm">
+            © {currentYear} Animesh Singh. All rights reserved.
+          </p>
+          <div className="flex space-x-6 mt-4 md:mt-0">
+            <a
+              href="/privacy"
+              className="text-foreground/60 hover:text-foreground text-sm transition-colors duration-300"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="/terms"
+              className="text-foreground/60 hover:text-foreground text-sm transition-colors duration-300"
+            >
+              Terms of Service
+            </a>
+            <a
+              href="/sitemap"
+              className="text-foreground/60 hover:text-foreground text-sm transition-colors duration-300"
+            >
+              Sitemap
+            </a>
+          </div>
+        </div>
+
+        {/* Back to Top */}
+        <div className="text-center mt-8">
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="text-foreground/60 hover:text-foreground transition-colors duration-300 text-sm"
+          >
+            ↑ Back to Top
+          </button>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
