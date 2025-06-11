@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Heart, Code, Coffee, Github, Linkedin, Mail } from 'lucide-react';
+import { Heart, Code, Coffee, Github, Linkedin, Mail, Instagram, Twitter, Facebook } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -48,7 +48,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* GitHub & Social */}
+          {/* Social Media Links */}
           <div>
             <h4 className="font-semibold text-foreground mb-4">Follow Me</h4>
             <div className="space-y-3">
@@ -62,7 +62,7 @@ const Footer = () => {
                 <span>GitHub Profile</span>
               </a>
               <a
-                href="https://linkedin.com/in/animeshsingh"
+                href="https://www.linkedin.com/in/animeshsingh9693/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-foreground/70 hover:text-foreground transition-colors duration-300"
@@ -71,11 +71,22 @@ const Footer = () => {
                 <span>LinkedIn</span>
               </a>
               <a
-                href="mailto:ani.yug272@gmail.com"
+                href="https://www.instagram.com/animesh.singh_rajput/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-foreground/70 hover:text-foreground transition-colors duration-300"
               >
-                <Mail size={18} />
-                <span>Email</span>
+                <Instagram size={18} />
+                <span>Instagram</span>
+              </a>
+              <a
+                href="https://x.com/Animesh_9693?t=Iuz7GXrGixApFcQPV2UsXw&s=09"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 text-foreground/70 hover:text-foreground transition-colors duration-300"
+              >
+                <Twitter size={18} />
+                <span>Twitter</span>
               </a>
             </div>
           </div>
@@ -91,12 +102,21 @@ const Footer = () => {
                 ani.yug272@gmail.com
               </a>
               <a
-                href="tel:+919876543210"
+                href="tel:+919693856529"
                 className="block text-foreground/70 hover:text-foreground transition-colors duration-300"
               >
-                +91 98765 43210
+                +91 96938 56529
               </a>
               <p className="text-foreground/70">New Delhi, India</p>
+              <a
+                href="https://www.facebook.com/researchfacts.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 text-foreground/70 hover:text-foreground transition-colors duration-300"
+              >
+                <Facebook size={16} />
+                <span>Facebook</span>
+              </a>
             </div>
           </div>
         </div>
@@ -108,16 +128,11 @@ const Footer = () => {
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a
-              href="/privacy"
+              href="/resume.pdf"
+              download
               className="text-foreground/60 hover:text-foreground text-sm transition-colors duration-300"
             >
-              Privacy Policy
-            </a>
-            <a
-              href="/terms"
-              className="text-foreground/60 hover:text-foreground text-sm transition-colors duration-300"
-            >
-              Terms of Service
+              Download Resume
             </a>
             <a
               href="https://github.com/CoderAnimeshSingh"

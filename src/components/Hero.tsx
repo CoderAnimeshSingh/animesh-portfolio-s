@@ -96,12 +96,13 @@ const Hero = () => {
               >
                 View My Work
               </button>
-              <button
-                onClick={() => scrollToSection('contact')}
-                className="border-2 border-blue-500 text-blue-500 px-8 py-3 rounded-lg hover:bg-blue-500 hover:text-white transition-all duration-300 hover:scale-105"
+              <a
+                href="/resume.pdf"
+                download
+                className="border-2 border-blue-500 text-blue-500 px-8 py-3 rounded-lg hover:bg-blue-500 hover:text-white transition-all duration-300 hover:scale-105 text-center"
               >
-                Get In Touch
-              </button>
+                Download Resume
+              </a>
             </div>
 
             {/* Social Links */}
@@ -114,7 +115,12 @@ const Hero = () => {
               >
                 <Github size={24} />
               </a>
-              <a href="https://linkedin.com/in/animeshsingh" className="p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-all duration-300 hover:scale-110">
+              <a 
+                href="https://www.linkedin.com/in/animeshsingh9693/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-all duration-300 hover:scale-110"
+              >
                 <Linkedin size={24} />
               </a>
               <a href="mailto:ani.yug272@gmail.com" className="p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-all duration-300 hover:scale-110">
@@ -129,12 +135,15 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Avatar/Image */}
+          {/* Profile Image */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="w-80 h-80 bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 rounded-full animate-pulse"></div>
-              <div className="absolute inset-4 bg-gradient-to-br from-blue-500 via-purple-600 to-pink-600 rounded-full flex items-center justify-center text-white text-6xl font-bold">
-                A
+              <div className="w-80 h-80 rounded-full overflow-hidden bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 p-2">
+                <img
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500"
+                  alt="Animesh Singh"
+                  className="w-full h-full object-cover rounded-full"
+                />
               </div>
               {/* Floating icons around avatar */}
               <div className="absolute -top-4 -right-4 w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center text-white text-xl animate-bounce">

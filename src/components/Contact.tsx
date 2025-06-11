@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Github, Linkedin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Send, Instagram, Twitter, Facebook } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -76,22 +76,51 @@ const Contact = () => {
             {/* Social Links */}
             <div className="pt-8">
               <h4 className="font-semibold text-foreground mb-4">Follow Me</h4>
-              <div className="flex space-x-4">
+              <div className="grid grid-cols-2 gap-4">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/CoderAnimeshSingh"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 bg-secondary hover:bg-secondary/80 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
+                  className="w-full h-12 bg-secondary hover:bg-secondary/80 rounded-lg flex items-center justify-center space-x-2 transition-all duration-300 hover:scale-105"
                 >
                   <Github size={20} />
+                  <span className="text-sm">GitHub</span>
                 </a>
                 <a
-                  href="https://linkedin.com/in/animeshsingh"
+                  href="https://www.linkedin.com/in/animeshsingh9693/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 bg-secondary hover:bg-secondary/80 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
+                  className="w-full h-12 bg-secondary hover:bg-secondary/80 rounded-lg flex items-center justify-center space-x-2 transition-all duration-300 hover:scale-105"
                 >
                   <Linkedin size={20} />
+                  <span className="text-sm">LinkedIn</span>
+                </a>
+                <a
+                  href="https://www.instagram.com/animesh.singh_rajput/?hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full h-12 bg-secondary hover:bg-secondary/80 rounded-lg flex items-center justify-center space-x-2 transition-all duration-300 hover:scale-105"
+                >
+                  <Instagram size={20} />
+                  <span className="text-sm">Instagram</span>
+                </a>
+                <a
+                  href="https://x.com/Animesh_9693?t=Iuz7GXrGixApFcQPV2UsXw&s=09"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full h-12 bg-secondary hover:bg-secondary/80 rounded-lg flex items-center justify-center space-x-2 transition-all duration-300 hover:scale-105"
+                >
+                  <Twitter size={20} />
+                  <span className="text-sm">Twitter</span>
+                </a>
+                <a
+                  href="https://www.facebook.com/researchfacts.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full h-12 bg-secondary hover:bg-secondary/80 rounded-lg flex items-center justify-center space-x-2 transition-all duration-300 hover:scale-105 col-span-2"
+                >
+                  <Facebook size={20} />
+                  <span className="text-sm">Facebook</span>
                 </a>
               </div>
             </div>
