@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { Github } from 'lucide-react';
 import ProjectCard from './ProjectCard';
 
 const Projects = () => {
