@@ -13,18 +13,18 @@ const Projects = () => {
       image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500',
       tags: ['Java', 'File I/O', 'OOP', 'CRUD'],
       category: 'Academic',
-      githubUrl: 'https://github.com',
+      githubUrl: 'https://github.com/CoderAnimeshSingh/student-management-system',
       liveUrl: '#',
       featured: true
     },
     {
       id: 2,
       title: 'Personal Portfolio Website',
-      description: 'A responsive personal portfolio website to showcase projects and skills. Designed with mobile-first approach and cross-browser compatibility.',
+      description: 'A responsive personal portfolio website to showcase projects and skills. Built with React.js and Tailwind CSS with modern design principles.',
       image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=500',
-      tags: ['HTML5', 'CSS3', 'JavaScript', 'Responsive'],
+      tags: ['React.js', 'Tailwind CSS', 'TypeScript', 'Responsive'],
       category: 'Web Development',
-      githubUrl: 'https://github.com',
+      githubUrl: 'https://github.com/CoderAnimeshSingh/portfolio-website',
       liveUrl: '#',
       featured: true
     },
@@ -35,46 +35,68 @@ const Projects = () => {
       image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500',
       tags: ['JavaScript', 'HTML/CSS', 'API', 'Fetch API'],
       category: 'Frontend',
-      githubUrl: 'https://github.com',
+      githubUrl: 'https://github.com/CoderAnimeshSingh/weather-app',
       liveUrl: '#',
       featured: true
     },
     {
       id: 4,
-      title: 'TechVerse Nexus Community Platform',
-      description: 'Founded and developed a tech community platform for mentoring 1K+ students, organizing hackathons, and fostering collaborative learning environment.',
-      image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=500',
-      tags: ['Community', 'Leadership', 'Mentorship', 'Events'],
-      category: 'Leadership',
-      githubUrl: '#',
+      title: 'E-Commerce Website',
+      description: 'Full-stack e-commerce platform with user authentication, product management, shopping cart functionality, and payment integration.',
+      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500',
+      tags: ['React.js', 'Node.js', 'MongoDB', 'Express.js'],
+      category: 'Full Stack',
+      githubUrl: 'https://github.com/CoderAnimeshSingh/ecommerce-website',
       liveUrl: '#',
       featured: false
     },
     {
       id: 5,
-      title: 'Data Structures & Algorithms Practice',
-      description: 'Comprehensive collection of DSA problems solved in Java, focusing on optimization and efficient algorithmic approaches.',
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500',
-      tags: ['Java', 'DSA', 'Algorithms', 'Problem Solving'],
-      category: 'Academic',
-      githubUrl: 'https://github.com',
+      title: 'Chat Application',
+      description: 'Real-time chat application with socket.io for instant messaging, user authentication, and group chat features.',
+      image: 'https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=500',
+      tags: ['Socket.io', 'Node.js', 'React.js', 'MongoDB'],
+      category: 'Full Stack',
+      githubUrl: 'https://github.com/CoderAnimeshSingh/chat-application',
       liveUrl: '#',
       featured: false
     },
     {
       id: 6,
-      title: 'Hackathon Organization & Management',
-      description: 'Led and managed 4+ tech hackathons across Delhi NCR with strategic planning, execution, and successful outcomes for participants.',
-      image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500',
-      tags: ['Event Management', 'Leadership', 'Strategy', 'Community'],
+      title: 'Task Management System',
+      description: 'A comprehensive task management application with drag-and-drop functionality, deadline tracking, and team collaboration features.',
+      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500',
+      tags: ['React.js', 'Redux', 'Node.js', 'PostgreSQL'],
+      category: 'Web Development',
+      githubUrl: 'https://github.com/CoderAnimeshSingh/task-management',
+      liveUrl: '#',
+      featured: false
+    },
+    {
+      id: 7,
+      title: 'Data Structures & Algorithms Practice',
+      description: 'Comprehensive collection of DSA problems solved in Java, focusing on optimization and efficient algorithmic approaches.',
+      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500',
+      tags: ['Java', 'DSA', 'Algorithms', 'Problem Solving'],
+      category: 'Academic',
+      githubUrl: 'https://github.com/CoderAnimeshSingh/dsa-practice',
+      liveUrl: '#',
+      featured: false
+    },
+    {
+      id: 8,
+      title: 'TechVerse Nexus Community Platform',
+      description: 'Founded and developed a tech community platform for mentoring 1K+ students, organizing hackathons, and fostering collaborative learning environment.',
+      image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=500',
+      tags: ['Community', 'Leadership', 'Mentorship', 'Events'],
       category: 'Leadership',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/CoderAnimeshSingh/techverse-nexus',
       liveUrl: '#',
       featured: false
     }
   ];
 
-  const categories = ['All', 'Academic', 'Web Development', 'Frontend', 'Leadership'];
+  const categories = ['All', 'Academic', 'Web Development', 'Frontend', 'Full Stack', 'Leadership'];
   
   const filteredProjects = filter === 'All' 
     ? projects 
@@ -90,7 +112,7 @@ const Projects = () => {
             My Projects
           </h2>
           <p className="text-xl text-foreground/70 max-w-3xl mx-auto">
-            Here are some of my academic projects and community initiatives that showcase my technical skills and leadership abilities.
+            Here are some of my projects showcasing my technical skills in full-stack development, algorithms, and community initiatives.
           </p>
         </div>
 
@@ -130,19 +152,21 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* Call to Action */}
-        <div className="text-center mt-16">
-          <p className="text-lg text-foreground/70 mb-6">
-            Want to see more of my work and contributions?
+        {/* GitHub Profile Section */}
+        <div className="mt-16 bg-background border border-border rounded-xl p-8 text-center">
+          <h3 className="text-2xl font-semibold text-foreground mb-4">Explore More on GitHub</h3>
+          <p className="text-foreground/70 mb-6">
+            Check out my complete collection of projects, contributions, and code repositories on GitHub.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://github.com"
+              href="https://github.com/CoderAnimeshSingh"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-3 rounded-lg hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl"
             >
-              <span>Visit My GitHub</span>
+              <Github size={20} />
+              <span>Visit My GitHub Profile</span>
               <span>→</span>
             </a>
             <a
@@ -154,6 +178,22 @@ const Projects = () => {
               <span>Connect on LinkedIn</span>
               <span>→</span>
             </a>
+          </div>
+          
+          {/* GitHub Stats */}
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-secondary/50 rounded-lg p-4">
+              <h4 className="text-lg font-semibold text-foreground">Public Repositories</h4>
+              <p className="text-2xl font-bold text-blue-500">15+</p>
+            </div>
+            <div className="bg-secondary/50 rounded-lg p-4">
+              <h4 className="text-lg font-semibold text-foreground">Languages Used</h4>
+              <p className="text-2xl font-bold text-purple-500">8+</p>
+            </div>
+            <div className="bg-secondary/50 rounded-lg p-4">
+              <h4 className="text-lg font-semibold text-foreground">Contributions</h4>
+              <p className="text-2xl font-bold text-green-500">200+</p>
+            </div>
           </div>
         </div>
       </div>

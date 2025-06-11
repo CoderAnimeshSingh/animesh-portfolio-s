@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Heart, Code, Coffee } from 'lucide-react';
+import { Heart, Code, Coffee, Github, Linkedin, Mail } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="bg-secondary/30 border-t border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent mb-4">
@@ -48,15 +48,47 @@ const Footer = () => {
             </div>
           </div>
 
+          {/* GitHub & Social */}
+          <div>
+            <h4 className="font-semibold text-foreground mb-4">Follow Me</h4>
+            <div className="space-y-3">
+              <a
+                href="https://github.com/CoderAnimeshSingh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 text-foreground/70 hover:text-foreground transition-colors duration-300"
+              >
+                <Github size={18} />
+                <span>GitHub Profile</span>
+              </a>
+              <a
+                href="https://linkedin.com/in/animeshsingh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 text-foreground/70 hover:text-foreground transition-colors duration-300"
+              >
+                <Linkedin size={18} />
+                <span>LinkedIn</span>
+              </a>
+              <a
+                href="mailto:ani.yug272@gmail.com"
+                className="flex items-center space-x-2 text-foreground/70 hover:text-foreground transition-colors duration-300"
+              >
+                <Mail size={18} />
+                <span>Email</span>
+              </a>
+            </div>
+          </div>
+
           {/* Contact Info */}
           <div>
             <h4 className="font-semibold text-foreground mb-4">Let's Connect</h4>
             <div className="space-y-2">
               <a
-                href="mailto:animesh.singh@example.com"
+                href="mailto:ani.yug272@gmail.com"
                 className="block text-foreground/70 hover:text-foreground transition-colors duration-300"
               >
-                animesh.singh@example.com
+                ani.yug272@gmail.com
               </a>
               <a
                 href="tel:+919876543210"
@@ -88,10 +120,12 @@ const Footer = () => {
               Terms of Service
             </a>
             <a
-              href="/sitemap"
+              href="https://github.com/CoderAnimeshSingh"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-foreground/60 hover:text-foreground text-sm transition-colors duration-300"
             >
-              Sitemap
+              GitHub
             </a>
           </div>
         </div>

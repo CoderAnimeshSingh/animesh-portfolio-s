@@ -106,7 +106,12 @@ const Hero = () => {
 
             {/* Social Links */}
             <div className="flex gap-4 justify-center lg:justify-start">
-              <a href="https://github.com" className="p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-all duration-300 hover:scale-110">
+              <a 
+                href="https://github.com/CoderAnimeshSingh" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-all duration-300 hover:scale-110"
+              >
                 <Github size={24} />
               </a>
               <a href="https://linkedin.com/in/animeshsingh" className="p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-all duration-300 hover:scale-110">
