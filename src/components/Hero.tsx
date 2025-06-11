@@ -140,7 +140,7 @@ const Hero = () => {
             <div className="relative">
               <div className="w-80 h-80 rounded-full overflow-hidden bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 p-2">
                 <img
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500"
+                  src="/lovable-uploads/0f7e98bf-0ea2-4c68-b88f-0b538cfa5200.png"
                   alt="Animesh Singh"
                   className="w-full h-full object-cover rounded-full"
                 />
