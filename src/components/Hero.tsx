@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Github, Mail, User } from 'lucide-react';
+import { Github, Mail, User, Linkedin } from 'lucide-react';
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
@@ -9,8 +9,8 @@ const Hero = () => {
   
   const roles = [
     'Full Stack Developer',
-    'React Specialist',
-    'UI/UX Enthusiast',
+    'BCA Student',
+    'Tech Community Leader',
     'Problem Solver'
   ];
 
@@ -84,8 +84,8 @@ const Hero = () => {
             </div>
 
             <p className="text-lg text-foreground/70 mb-8 max-w-2xl animate-fade-in">
-              Passionate about creating beautiful, functional, and user-friendly applications. 
-              I bring ideas to life through code and design, focusing on performance and user experience.
+              BCA student at Delhi Skill and Entrepreneurship University with expertise in Java, Python, and modern web technologies. 
+              Passionate about building scalable applications and leading tech communities.
             </p>
 
             {/* CTA Buttons */}
@@ -109,7 +109,10 @@ const Hero = () => {
               <a href="https://github.com" className="p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-all duration-300 hover:scale-110">
                 <Github size={24} />
               </a>
-              <a href="mailto:contact@example.com" className="p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-all duration-300 hover:scale-110">
+              <a href="https://linkedin.com/in/animeshsingh" className="p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-all duration-300 hover:scale-110">
+                <Linkedin size={24} />
+              </a>
+              <a href="mailto:ani.yug272@gmail.com" className="p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-all duration-300 hover:scale-110">
                 <Mail size={24} />
               </a>
               <button

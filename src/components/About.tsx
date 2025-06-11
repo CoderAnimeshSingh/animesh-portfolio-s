@@ -1,42 +1,55 @@
 
 import React from 'react';
-import { Code, Briefcase, GraduationCap, Heart } from 'lucide-react';
+import { Code, Briefcase, GraduationCap, Heart, Users, Trophy } from 'lucide-react';
 
 const About = () => {
   const timeline = [
     {
-      year: '2020',
-      title: 'Started Programming Journey',
-      description: 'Began learning web development with HTML, CSS, and JavaScript',
-      icon: <Code size={20} />
-    },
-    {
-      year: '2021',
-      title: 'Mastered React & Node.js',
-      description: 'Developed expertise in modern JavaScript frameworks and backend development',
+      year: '2023',
+      title: 'Started BCA at DSEU',
+      description: 'Began Bachelor of Computer Applications at Delhi Skill and Entrepreneurship University with 8.5/10 CGPA',
       icon: <GraduationCap size={20} />
     },
     {
-      year: '2022',
-      title: 'First Professional Project',
-      description: 'Delivered my first client project - a full-stack e-commerce platform',
-      icon: <Briefcase size={20} />
+      year: '2023',
+      title: 'Founded TechVerse Nexus',
+      description: 'Established a tech community, mentoring 1K+ students and fostering collaborative learning',
+      icon: <Users size={20} />
     },
     {
-      year: '2023',
-      title: 'Full Stack Developer',
-      description: 'Currently working on exciting projects and helping businesses grow',
-      icon: <Heart size={20} />
+      year: '2023-2024',
+      title: 'Hackathon Organizer',
+      description: 'Led and managed 4+ tech hackathons across Delhi NCR with strategic planning and execution',
+      icon: <Trophy size={20} />
+    },
+    {
+      year: '2024',
+      title: 'Event Coordinator',
+      description: 'Contributing to high-profile government and corporate tech events, expanding professional network',
+      icon: <Briefcase size={20} />
+    }
+  ];
+
+  const achievements = [
+    {
+      title: 'Java Programming Certification',
+      issuer: 'NPTEL',
+      description: 'Advanced certification in Java programming and object-oriented principles'
+    },
+    {
+      title: 'Full Stack Development',
+      issuer: 'Apna College',
+      description: 'Comprehensive training in DSA with Java and full-stack web development'
     }
   ];
 
   const interests = [
-    '🚀 Space Technology',
-    '🎮 Game Development',
-    '📚 Continuous Learning',
-    '🎵 Music Production',
-    '🏔️ Mountain Hiking',
-    '📸 Photography'
+    '💻 Full Stack Development',
+    '🎯 Problem Solving',
+    '👥 Community Building',
+    '🚀 Tech Innovation',
+    '📱 Mobile Development',
+    '🌐 Open Source'
   ];
 
   return (
@@ -47,7 +60,7 @@ const About = () => {
             About Me
           </h2>
           <p className="text-xl text-foreground/70 max-w-3xl mx-auto">
-            I'm a passionate developer who loves turning complex problems into simple, beautiful solutions.
+            A passionate developer and community leader, turning ideas into reality through code and collaboration.
           </p>
         </div>
 
@@ -56,19 +69,33 @@ const About = () => {
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-foreground mb-4">My Story</h3>
             <p className="text-foreground/80 leading-relaxed">
-              My journey in web development started during college when I discovered the magic of creating 
-              interactive experiences with code. What began as curiosity quickly turned into a passion for 
-              building applications that make a real difference in people's lives.
+              Currently pursuing Bachelor of Computer Applications at Delhi Skill and Entrepreneurship University 
+              with an impressive 8.5/10 CGPA. My journey in technology combines academic excellence with practical 
+              experience in full-stack development.
             </p>
             <p className="text-foreground/80 leading-relaxed">
-              I specialize in the MERN stack and love working with modern technologies like React, Next.js, 
-              and TypeScript. When I'm not coding, you'll find me exploring new technologies, contributing 
-              to open source projects, or planning my next adventure in the mountains.
+              As the founder of TechVerse Nexus, I've mentored over 1,000 students and organized multiple hackathons 
+              across Delhi NCR. My technical expertise spans Java, Python, C++, JavaScript, and modern web technologies 
+              including React.js, Node.js, and Express.
             </p>
+            
+            {/* Certifications */}
+            <div className="mt-8">
+              <h4 className="text-lg font-semibold text-foreground mb-4">Certifications</h4>
+              <div className="space-y-3">
+                {achievements.map((cert, index) => (
+                  <div key={index} className="bg-background border border-border rounded-lg p-4">
+                    <h5 className="font-semibold text-foreground">{cert.title}</h5>
+                    <p className="text-blue-500 text-sm">{cert.issuer}</p>
+                    <p className="text-foreground/70 text-sm mt-1">{cert.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
             
             {/* Interests */}
             <div className="mt-8">
-              <h4 className="text-lg font-semibold text-foreground mb-4">When I'm not coding...</h4>
+              <h4 className="text-lg font-semibold text-foreground mb-4">What drives me...</h4>
               <div className="grid grid-cols-2 gap-3">
                 {interests.map((interest, index) => (
                   <div key={index} className="flex items-center space-x-2 text-foreground/70">
@@ -112,10 +139,10 @@ const About = () => {
         {/* Stats */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
-            { number: '3+', label: 'Years Experience' },
-            { number: '50+', label: 'Projects Completed' },
-            { number: '10+', label: 'Technologies' },
-            { number: '100%', label: 'Satisfaction Rate' }
+            { number: '8.5', label: 'Current CGPA' },
+            { number: '1K+', label: 'Students Mentored' },
+            { number: '4+', label: 'Hackathons Organized' },
+            { number: '3+', label: 'Academic Projects' }
           ].map((stat, index) => (
             <div key={index} className="text-center">
               <div className="text-3xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
