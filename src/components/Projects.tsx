@@ -42,62 +42,73 @@ const Projects = () => {
     },
     {
       id: 4,
-      title: 'E-Commerce Website',
-      description: 'Full-stack e-commerce platform with user authentication, product management, shopping cart functionality, and payment integration.',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500',
-      tags: ['React.js', 'Node.js', 'MongoDB', 'Express.js'],
+      title: 'AI ChatBot',
+      description: 'An intelligent chatbot application built with Next.js featuring real-time conversations, AI-powered responses, and modern user interface design.',
+      image: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=500',
+      tags: ['Next.js', 'AI', 'React.js', 'TypeScript'],
       category: 'Full Stack',
-      githubUrl: 'https://github.com/CoderAnimeshSingh/ecommerce-website',
-      liveUrl: '#',
+      githubUrl: 'https://github.com/CoderAnimeshSingh/nextjs-ai-chatbot',
+      liveUrl: 'https://coderanimeshsingh.github.io/nextjs-ai-chatbot/',
       featured: false
     },
     {
       id: 5,
-      title: 'Chat Application',
-      description: 'Real-time chat application with socket.io for instant messaging, user authentication, and group chat features.',
-      image: 'https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=500',
-      tags: ['Socket.io', 'Node.js', 'React.js', 'MongoDB'],
+      title: 'E-Commerce Website',
+      description: 'Full-stack e-commerce platform built with Next.js featuring product catalog, shopping cart, user authentication, and modern responsive design.',
+      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500',
+      tags: ['Next.js', 'React.js', 'E-commerce', 'Responsive'],
       category: 'Full Stack',
-      githubUrl: 'https://github.com/CoderAnimeshSingh/chat-application',
-      liveUrl: '#',
+      githubUrl: 'https://github.com/CoderAnimeshSingh/nextjs-commerce',
+      liveUrl: 'https://coderanimeshsingh.github.io/nextjs-commerce/',
       featured: false
     },
     {
       id: 6,
-      title: 'Task Management System',
-      description: 'A comprehensive task management application with drag-and-drop functionality, deadline tracking, and team collaboration features.',
-      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500',
-      tags: ['React.js', 'Redux', 'Node.js', 'PostgreSQL'],
-      category: 'Web Development',
-      githubUrl: 'https://github.com/CoderAnimeshSingh/task-management',
-      liveUrl: '#',
+      title: 'Vite React Application',
+      description: 'A modern React application built with Vite for fast development and optimized performance. Features modern UI components and responsive design.',
+      image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=500',
+      tags: ['Vite', 'React.js', 'JavaScript', 'Modern UI'],
+      category: 'Frontend',
+      githubUrl: 'https://github.com/CoderAnimeshSingh/vite-react-app',
+      liveUrl: 'https://vite-react-6cbg1bzyz-animesh-singhs-projects-7d06dd11.vercel.app/',
       featured: false
     },
     {
       id: 7,
-      title: 'Data Structures & Algorithms Practice',
-      description: 'Comprehensive collection of DSA problems solved in Java, focusing on optimization and efficient algorithmic approaches.',
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500',
-      tags: ['Java', 'DSA', 'Algorithms', 'Problem Solving'],
-      category: 'Academic',
-      githubUrl: 'https://github.com/CoderAnimeshSingh/dsa-practice',
-      liveUrl: '#',
+      title: 'To-Do List Application',
+      description: 'A feature-rich task management application with add, edit, delete, and mark complete functionality. Built with vanilla JavaScript and modern CSS.',
+      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500',
+      tags: ['JavaScript', 'HTML/CSS', 'Local Storage', 'DOM'],
+      category: 'Frontend',
+      githubUrl: 'https://github.com/CoderAnimeshSingh/To-do-List-Application',
+      liveUrl: 'https://coderanimeshsingh.github.io/To-do-List-Application/',
       featured: false
     },
     {
       id: 8,
-      title: 'TechVerse Nexus Community Platform',
-      description: 'Founded and developed a tech community platform for mentoring 1K+ students, organizing hackathons, and fostering collaborative learning environment.',
+      title: 'Calculator Application',
+      description: 'A fully functional calculator app with basic arithmetic operations, memory functions, and responsive design. Built with JavaScript and CSS.',
+      image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=500',
+      tags: ['JavaScript', 'HTML/CSS', 'Calculator', 'Responsive'],
+      category: 'Frontend',
+      githubUrl: 'https://github.com/CoderAnimeshSingh/Calculator-App',
+      liveUrl: 'https://coderanimeshsingh.github.io/Calculator-App/',
+      featured: false
+    },
+    {
+      id: 9,
+      title: 'CoderAnimeshSingh Profile',
+      description: 'Personal GitHub profile showcase website featuring bio, skills, and project highlights. Clean and professional design with responsive layout.',
       image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=500',
-      tags: ['Community', 'Leadership', 'Mentorship', 'Events'],
-      category: 'Leadership',
-      githubUrl: 'https://github.com/CoderAnimeshSingh/techverse-nexus',
-      liveUrl: '#',
+      tags: ['HTML/CSS', 'JavaScript', 'GitHub Pages', 'Profile'],
+      category: 'Web Development',
+      githubUrl: 'https://github.com/CoderAnimeshSingh/CoderAnimeshSingh',
+      liveUrl: 'https://coderanimeshsingh.github.io/CoderAnimeshSingh/',
       featured: false
     }
   ];
 
-  const categories = ['All', 'Academic', 'Web Development', 'Frontend', 'Full Stack', 'Leadership'];
+  const categories = ['All', 'Academic', 'Web Development', 'Frontend', 'Full Stack'];
   
   const filteredProjects = filter === 'All' 
     ? projects 
@@ -113,7 +124,7 @@ const Projects = () => {
             My Projects
           </h2>
           <p className="text-xl text-foreground/70 max-w-3xl mx-auto">
-            Here are some of my projects showcasing my technical skills in full-stack development, algorithms, and community initiatives.
+            Here are some of my projects showcasing my technical skills in full-stack development, modern web technologies, and creative problem-solving.
           </p>
         </div>
 
@@ -171,7 +182,7 @@ const Projects = () => {
               <span>→</span>
             </a>
             <a
-              href="https://linkedin.com/in/animeshsingh"
+              href="https://www.linkedin.com/in/animeshsingh9693/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 border-2 border-blue-500 text-blue-500 px-8 py-3 rounded-lg hover:bg-blue-500 hover:text-white transition-all duration-300 hover:scale-105"
@@ -185,15 +196,15 @@ const Projects = () => {
           <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-secondary/50 rounded-lg p-4">
               <h4 className="text-lg font-semibold text-foreground">Public Repositories</h4>
-              <p className="text-2xl font-bold text-blue-500">15+</p>
+              <p className="text-2xl font-bold text-blue-500">20+</p>
             </div>
             <div className="bg-secondary/50 rounded-lg p-4">
               <h4 className="text-lg font-semibold text-foreground">Languages Used</h4>
-              <p className="text-2xl font-bold text-purple-500">8+</p>
+              <p className="text-2xl font-bold text-purple-500">10+</p>
             </div>
             <div className="bg-secondary/50 rounded-lg p-4">
-              <h4 className="text-lg font-semibold text-foreground">Contributions</h4>
-              <p className="text-2xl font-bold text-green-500">200+</p>
+              <h4 className="text-lg font-semibold text-foreground">Live Projects</h4>
+              <p className="text-2xl font-bold text-green-500">9+</p>
             </div>
           </div>
         </div>
