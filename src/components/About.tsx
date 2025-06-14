@@ -1,66 +1,61 @@
 
 import React from 'react';
-import { Code, Briefcase, GraduationCap, Heart, Users, Trophy, Award, Zap, Target, Cloud } from 'lucide-react';
+import { Code, Briefcase, GraduationCap, Heart, Users, Trophy, Award, Zap, Target } from 'lucide-react';
 
 const About = () => {
   const timeline = [
     {
-      year: '2023 – Present',
-      title: 'BCA Student at DSEU',
-      description: 'Consistently achieving academic distinction with a focus on real-world application of computing concepts at Delhi Skill and Entrepreneurship University.',
+      year: '2023',
+      title: 'Started BCA at DSEU',
+      description: 'Commenced Bachelor of Computer Applications at Delhi Skill and Entrepreneurship University, achieving exceptional 8.5/10 CGPA through dedicated academic excellence',
       icon: <GraduationCap size={20} />
     },
     {
-      year: '2023 – Present',
-      title: 'Founder, TechVerse Nexus',
-      description: 'Established a dynamic tech community of 1K+ developers; leading initiatives on mentorship, skill development, and collaborative innovation.',
+      year: '2023',
+      title: 'Founded TechVerse Nexus',
+      description: 'Established a thriving tech community ecosystem, successfully mentoring 1K+ aspiring developers and fostering collaborative innovation in the tech space',
       icon: <Users size={20} />
     },
     {
-      year: '2023 – 2024',
-      title: 'Hackathon & Tech Event Organizer',
-      description: 'Spearheaded and executed 4+ major hackathons and tech summits across Delhi NCR; ensured exceptional participant engagement, sponsorship alignment, and post-event impact.',
+      year: '2023-2024',
+      title: 'Tech Event Leadership',
+      description: 'Spearheaded and orchestrated 4+ major tech hackathons across Delhi NCR with strategic planning, flawless execution, and outstanding participant engagement',
       icon: <Trophy size={20} />
     },
     {
-      year: '2024 – Present',
-      title: 'Industry Collaboration & Strategic Partnerships',
-      description: 'Working closely with government and corporate entities to lead large-scale tech initiatives, foster innovation ecosystems, and expand outreach in India\'s digital talent landscape.',
+      year: '2024',
+      title: 'Industry Collaboration',
+      description: 'Leading high-profile government and corporate tech events, building strategic partnerships and expanding professional networks in the technology ecosystem',
       icon: <Briefcase size={20} />
     }
   ];
 
   const achievements = [
     {
-      title: 'Google Cloud Arcade Facilitator Program',
-      issuer: 'Google Cloud (Apr 2025 – Jun 2025)',
-      description: 'Selected for the prestigious Google Cloud Arcade Facilitator Program, gained 600+ free credits, completed hands-on labs in Cloud Computing, AI/ML, Big Data, and App Development. Mentored peers and contributed to global cloud community.'
-    },
-    {
       title: 'Java Programming Excellence',
       issuer: 'NPTEL (Premium Certification)',
-      description: 'Mastery in object-oriented design, enterprise-level development, and core Java principles with advanced programming techniques.'
+      description: 'Advanced mastery in Java programming, object-oriented principles, and enterprise-level application development'
     },
     {
-      title: 'Full-Stack Development',
-      issuer: 'Apna College (Industry Endorsed)',
-      description: 'Proficient in DSA with Java, React.js, Node.js, Express, MongoDB, and scalable app architecture with modern development practices.'
+      title: 'Full Stack Development Mastery',
+      issuer: 'Apna College (Industry Recognition)',
+      description: 'Comprehensive expertise in DSA with Java, modern web development frameworks, and scalable application architecture'
     }
   ];
 
   const expertise = [
-    { icon: '🏗️', text: 'Full-Stack Architecture' },
+    { icon: '🎯', text: 'Full Stack Architecture' },
     { icon: '⚡', text: 'Performance Optimization' },
-    { icon: '🔧', text: 'System Design' },
-    { icon: '👥', text: 'Team & Technical Leadership' },
-    { icon: '☁️', text: 'Cloud Integration' },
-    { icon: '🎨', text: 'Front-End Engineering' }
+    { icon: '🔧', text: 'System Design & Scalability' },
+    { icon: '👥', text: 'Team Leadership & Mentoring' },
+    { icon: '🚀', text: 'Innovation & Product Development' },
+    { icon: '🌐', text: 'Enterprise Solutions' }
   ];
 
   const stats = [
     { number: '8.5', label: 'Academic CGPA', suffix: '/10' },
     { number: '1K+', label: 'Developers Mentored', suffix: '' },
-    { number: '4+', label: 'Hackathons Led', suffix: '' },
+    { number: '4+', label: 'Major Hackathons Led', suffix: '' },
     { number: '15+', label: 'Technologies Mastered', suffix: '' }
   ];
 
@@ -71,11 +66,8 @@ const About = () => {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4">
             About Me
           </h2>
-          <h3 className="text-xl md:text-2xl font-semibold text-foreground mb-4">
-            Expert Full-Stack Developer | Technology Leader | Community Architect
-          </h3>
-          <p className="text-lg md:text-xl text-foreground/70 max-w-4xl mx-auto leading-relaxed">
-            I am a driven and visionary Full-Stack Developer with a proven track record of building scalable, high-performance digital solutions. With a strong foundation in both software engineering and community leadership, I specialize in transforming complex ideas into impactful, production-grade applications.
+          <p className="text-lg md:text-xl text-foreground/70 max-w-3xl mx-auto leading-relaxed">
+            Expert Full Stack Developer, Tech Visionary, and Community Leader transforming ideas into scalable digital solutions.
           </p>
         </div>
 
@@ -102,41 +94,29 @@ const About = () => {
             </div>
             
             <p className="text-foreground/80 leading-relaxed text-sm md:text-base">
-              Currently pursuing a <strong>Bachelor of Computer Applications at Delhi Skill and Entrepreneurship University</strong>, 
-              I maintain an exceptional CGPA of <strong>8.5/10</strong>, showcasing consistent academic excellence coupled with deep practical expertise.
+              As an <strong>Expert Full Stack Developer</strong> and visionary tech leader, I bring exceptional technical prowess 
+              combined with strategic thinking to every project. Currently pursuing Bachelor of Computer Applications at 
+              Delhi Skill and Entrepreneurship University with an outstanding 8.5/10 CGPA, demonstrating academic excellence 
+              alongside practical expertise.
             </p>
             
             <p className="text-foreground/80 leading-relaxed text-sm md:text-base">
-              As the <strong>Founder of TechVerse Nexus</strong>, I've built a thriving developer community of over <strong>1,000 members</strong>, 
-              cultivating innovation, mentorship, and collaboration at scale. My work bridges cutting-edge technologies like Java, Python, C++, 
-              JavaScript, React, Node.js, MongoDB, and cloud-native architectures, with a commitment to modern engineering principles and enterprise-grade standards.
+              As the <strong>Founder of TechVerse Nexus</strong>, I've successfully built and led a thriving community of 1,000+ 
+              developers, establishing myself as a prominent figure in the tech ecosystem. My expertise spans cutting-edge 
+              technologies including Java, Python, C++, JavaScript, React.js, Node.js, and modern cloud architectures.
             </p>
 
             <p className="text-foreground/80 leading-relaxed text-sm md:text-base">
-              Beyond development, I have led and organized multiple <strong>high-profile hackathons and tech summits across Delhi NCR</strong>, 
-              partnering with academic institutions and government stakeholders. I am deeply invested in mentoring aspiring developers, 
-              fostering technical growth, and shaping the future of India's digital talent ecosystem.
+              Beyond development, I excel as a <strong>Hackathon Organizer</strong> and <strong>Event Coordinator</strong>, 
+              having orchestrated multiple large-scale tech events across Delhi NCR. My leadership extends to mentoring 
+              aspiring developers and fostering innovation in the technology community.
             </p>
             
-            {/* At a Glance Section */}
-            <div className="mt-8 bg-background/30 rounded-xl p-4 md:p-6 border border-border/30">
-              <h4 className="text-lg font-semibold text-foreground mb-4 flex items-center">
-                <Zap size={20} className="mr-2 text-blue-500" />
-                🔍 At a Glance
-              </h4>
-              <div className="space-y-2 text-sm md:text-base">
-                <p className="text-foreground/80">🎓 <strong>Academic Excellence:</strong> 8.5/10 CGPA (BCA, DSEU)</p>
-                <p className="text-foreground/80">👨‍🏫 <strong>Developers Mentored:</strong> 1,000+</p>
-                <p className="text-foreground/80">🏁 <strong>Hackathons Led:</strong> 4+ Major Events</p>
-                <p className="text-foreground/80">💡 <strong>Technologies Mastered:</strong> 15+ Core Tools & Languages</p>
-              </div>
-            </div>
-            
-            {/* Core Competencies */}
+            {/* Expertise Grid */}
             <div className="mt-8">
               <h4 className="text-lg font-semibold text-foreground mb-4 flex items-center">
-                <Target size={20} className="mr-2 text-purple-500" />
-                🛠️ Technical & Strategic Core Competencies
+                <Zap size={20} className="mr-2 text-blue-500" />
+                Core Expertise
               </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {expertise.map((skill, index) => (
@@ -152,7 +132,7 @@ const About = () => {
             <div className="mt-8">
               <h4 className="text-lg font-semibold text-foreground mb-4 flex items-center">
                 <Award size={20} className="mr-2 text-purple-500" />
-                🎖️ Certifications & Recognitions
+                Professional Certifications
               </h4>
               <div className="space-y-4">
                 {achievements.map((cert, index) => (
@@ -172,7 +152,7 @@ const About = () => {
               <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-600 rounded-lg flex items-center justify-center">
                 <Target size={18} className="text-white" />
               </div>
-              <h3 className="text-xl md:text-2xl font-semibold text-foreground">🗺️ Professional Timeline</h3>
+              <h3 className="text-xl md:text-2xl font-semibold text-foreground">Professional Journey</h3>
             </div>
             
             <div className="relative">

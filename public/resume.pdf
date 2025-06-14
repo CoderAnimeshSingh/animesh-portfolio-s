@@ -32,18 +32,18 @@ endobj
 
 4 0 obj
 <<
-/Length 6500
+/Length 4500
 >>
 stream
 BT
-/F2 24 Tf
+/F2 22 Tf
 50 750 Td
 (ANIMESH SINGH) Tj
-0 -35 Td
+0 -30 Td
 /F1 12 Tf
 (Email: ani.yug272@gmail.com | Phone: +91-9693856529) Tj
 0 -15 Td
-(LinkedIn: linkedin.com/in/animeshsingh9693 | GitHub: github.com/CoderAnimeshSingh) Tj
+(LinkedIn: linkedin.com/in/animeshsingh9693 | GitHub: github.com/CoderAnimeshSingh | LeetCode: LeetCode Profile) Tj
 
 0 -40 Td
 /F2 16 Tf
@@ -51,11 +51,11 @@ BT
 0 -25 Td
 /F2 12 Tf
 (Bachelor of Computer Applications \(BCA\)) Tj
-350 0 Td
+300 0 Td
 (August 2023 – Present) Tj
--350 -15 Td
+-300 -15 Td
 /F1 11 Tf
-(Delhi Skill and Entrepreneurship University \(DSEU\)) Tj
+(Delhi Skill and Entrepreneurship University) Tj
 0 -15 Td
 (Current CGPA: 8.5 / 10) Tj
 
@@ -66,125 +66,75 @@ BT
 /F1 12 Tf
 (Programming Languages: Java, Python, C++, JavaScript) Tj
 0 -15 Td
-(Web Development: HTML5, CSS3, React.js, Node.js, Express.js) Tj
+(Web Development: HTML5, CSS3, React.js, Node.js, Express) Tj
 0 -15 Td
 (Databases: MySQL, MongoDB) Tj
 0 -15 Td
-(Cloud & Tools: Google Cloud Platform, Git, GitHub, VS Code, Postman) Tj
+(Tools & Platforms: Git, GitHub, VS Code, Postman) Tj
 0 -15 Td
-(Core Concepts: Data Structures & Algorithms, OOP, REST APIs, System Design) Tj
-
-0 -35 Td
-/F2 16 Tf
-(EXPERIENCE & LEADERSHIP) Tj
-0 -25 Td
-/F2 12 Tf
-(Founder & Community Leader) Tj
-350 0 Td
-(2023 – Present) Tj
--350 -18 Td
-/F1 11 Tf
-(TechVerse Nexus Community) Tj
-0 -12 Td
-(• Founded and built a thriving tech community of 1,000+ developers) Tj
-0 -12 Td
-(• Mentored aspiring developers and fostered collaborative innovation) Tj
-0 -12 Td
-(• Organized skill development workshops and networking events) Tj
-
-0 -25 Td
-/F2 12 Tf
-(Google Cloud Arcade Facilitator) Tj
-350 0 Td
-(April 2025 – June 2025) Tj
--350 -18 Td
-/F1 11 Tf
-(Google Cloud Platform) Tj
-0 -12 Td
-(• Selected for prestigious Google Cloud Arcade Facilitator Program) Tj
-0 -12 Td
-(• Gained 600+ free credits and completed hands-on labs in Cloud Computing, AI/ML) Tj
-0 -12 Td
-(• Mentored peers in cloud skill building and contributed to global community) Tj
-
-0 -25 Td
-/F2 12 Tf
-(Hackathon Organizer & Event Coordinator) Tj
-350 0 Td
-(2023 – 2024) Tj
--350 -18 Td
-/F1 11 Tf
-(Delhi NCR Tech Events) Tj
-0 -12 Td
-(• Led and managed 4+ major tech hackathons across Delhi NCR) Tj
-0 -12 Td
-(• Ensured strategic planning, execution, and participant engagement) Tj
-0 -12 Td
-(• Collaborated with government and corporate entities for tech initiatives) Tj
+(Others: Data Structures & Algorithms, OOP, REST APIs) Tj
 
 0 -35 Td
 /F2 16 Tf
 (ACADEMIC PROJECTS) Tj
 0 -25 Td
 /F2 12 Tf
-(Full-Stack Web Application Portfolio) Tj
+(1. Student Management System \(Console-Based – Java\)) Tj
 0 -18 Td
 /F1 11 Tf
-(• Developed responsive portfolio website using React.js, TypeScript, and Tailwind CSS) Tj
+(   • Developed a console-based CRUD application for managing student records) Tj
 0 -12 Td
-(• Implemented modern UI/UX design with dark/light theme switching) Tj
+(   • Implemented file handling and object-oriented design principles) Tj
 0 -12 Td
-(• Deployed on Vercel with optimized performance and SEO) Tj
+(   • Technologies used: Java, File I/O) Tj
 
-0 -20 Td
+0 -25 Td
 /F2 12 Tf
-(Student Management System \(Java\)) Tj
+(2. Online Portfolio Website \(Responsive – HTML/CSS/JS\)) Tj
 0 -18 Td
 /F1 11 Tf
-(• Built console-based CRUD application with file handling and OOP principles) Tj
+(   • Designed and developed a personal portfolio to showcase projects and skills) Tj
 0 -12 Td
-(• Implemented data validation and error handling mechanisms) Tj
+(   • Ensured mobile responsiveness and cross-browser compatibility) Tj
 0 -12 Td
-(• Technologies: Java, File I/O, Object-Oriented Design) Tj
+(   • Technologies used: HTML5, CSS3, JavaScript) Tj
 
-0 -20 Td
+0 -25 Td
 /F2 12 Tf
-(Weather API Integration Project) Tj
+(3. Weather App using OpenWeather API \(Frontend\)) Tj
 0 -18 Td
 /F1 11 Tf
-(• Integrated OpenWeather API for real-time weather data visualization) Tj
+(   • Integrated external REST API to fetch real-time weather data based on location) Tj
 0 -12 Td
-(• Focused on responsive design and asynchronous JavaScript) Tj
+(   • Focused on UI/UX and asynchronous JavaScript using Fetch API) Tj
 0 -12 Td
-(• Technologies: JavaScript, HTML5/CSS3, REST API, Fetch API) Tj
+(   • Technologies used: JavaScript, HTML/CSS, API) Tj
+
+0 -35 Td
+/F2 16 Tf
+(POSITIONS OF RESPONSIBILITY) Tj
+0 -25 Td
+/F1 12 Tf
+(• Founder, TechVerse Nexus – Mentored 1K+ students; curated tech opportunities) Tj
+0 -12 Td
+(  and fostering a collaborative learning community.) Tj
+0 -18 Td
+(• Hackathon Organizer – Led and managed 4+ tech hackathons across Delhi NCR,) Tj
+0 -12 Td
+(  ensuring strategic planning and successful execution.) Tj
+0 -18 Td
+(• Event Coordinator – Contributed to high-profile government and corporate) Tj
+0 -12 Td
+(  tech events.) Tj
 
 0 -35 Td
 /F2 16 Tf
 (CERTIFICATIONS) Tj
 0 -25 Td
 /F1 12 Tf
-(• Google Cloud Arcade Facilitator Program – Google Cloud \(2025\)) Tj
-0 -15 Td
-(• Java Programming \(Premium Certification\) – NPTEL) Tj
+(• Java Programming – NPTEL) Tj
 0 -15 Td
 (• Full Stack Web Development & DSA with Java – Apna College) Tj
-0 -15 Td
-(• Cloud Computing, AI/ML, and Big Data – Google Cloud Skills Boost) Tj
-
-0 -35 Td
-/F2 16 Tf
-(ACHIEVEMENTS) Tj
-0 -25 Td
-/F1 12 Tf
-(• Maintained 8.5/10 CGPA with consistent academic excellence) Tj
-0 -15 Td
-(• Successfully mentored 1,000+ developers in the tech community) Tj
-0 -15 Td
-(• Organized 4+ major hackathons with high participant satisfaction) Tj
-0 -15 Td
-(• Earned 600+ Google Cloud credits and multiple skill badges) Tj
-0 -15 Td
-(• Active contributor to open-source projects and tech forums) Tj
 ET
 endstream
 endobj
@@ -212,13 +162,13 @@ xref
 0000000058 00000 n 
 0000000115 00000 n 
 0000000300 00000 n 
-0000006850 00000 n 
-0000006920 00000 n 
+0000004850 00000 n 
+0000004920 00000 n 
 trailer
 <<
 /Size 7
 /Root 1 0 R
 >>
 startxref
-6995
+4995
 %%EOF

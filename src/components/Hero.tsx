@@ -83,17 +83,11 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className="mb-6 md:mb-8">
-              <h3 className="text-lg md:text-xl font-semibold text-foreground mb-3">
-                💼 Full-Stack Developer | Crafting Scalable & Impactful Web Solutions
-              </h3>
-              <p className="text-sm sm:text-base md:text-lg text-foreground/70 max-w-2xl animate-fade-in leading-relaxed">
-                I'm a dedicated Full-Stack Developer with strong expertise in both front-end and back-end technologies. I build clean, scalable, and high-performance web applications using tools like React, Node.js, Express, MongoDB, and SQL.
-              </p>
-              <p className="text-sm sm:text-base md:text-lg text-foreground/70 max-w-2xl animate-fade-in leading-relaxed mt-3">
-                My focus is on delivering responsive UI/UX, writing efficient code, and developing end-to-end solutions that solve real-world problems. I follow modern development practices, prioritize code quality, and continuously explore new technologies to stay ahead in the field.
-              </p>
-            </div>
+            <p className="text-sm sm:text-base md:text-lg text-foreground/70 mb-6 md:mb-8 max-w-2xl animate-fade-in leading-relaxed">
+              Distinguished Full Stack Developer and visionary tech leader with expertise in cutting-edge technologies. 
+              Founder of TechVerse Nexus, mentoring 1K+ developers while architecting scalable solutions that drive digital transformation. 
+              Currently pursuing BCA at DSEU with exceptional academic excellence (8.5 CGPA).
+            </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start mb-6 md:mb-8">

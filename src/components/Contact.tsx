@@ -8,30 +8,11 @@ const Contact = () => {
     email: '',
     message: ''
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-
-    try {
-      // Create mailto URL with form data
-      const subject = `Portfolio Contact: Message from ${formData.name}`;
-      const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
-      const mailtoUrl = `mailto:ani.yug272@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      
-      // Open default email client
-      window.location.href = mailtoUrl;
-      
-      // Reset form
-      setFormData({ name: '', email: '', message: '' });
-      
-      console.log('Email client opened with message data');
-    } catch (error) {
-      console.error('Error opening email client:', error);
-    } finally {
-      setIsSubmitting(false);
-    }
+    console.log('Form submitted:', formData);
+    setFormData({ name: '', email: '', message: '' });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -237,15 +218,11 @@ const Contact = () => {
 
               <button
                 type="submit"
-                disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 md:px-8 py-2.5 md:py-3 rounded-lg hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2 text-sm md:text-base disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 md:px-8 py-2.5 md:py-3 rounded-lg hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2 text-sm md:text-base"
               >
                 <Send size={18} className="md:w-5 md:h-5" />
-                <span>{isSubmitting ? 'Opening Email...' : 'Send Message'}</span>
+                <span>Send Message</span>
               </button>
-              <p className="text-xs text-foreground/60 text-center">
-                This will open your default email app with the message pre-filled
-              </p>
             </form>
           </div>
         </div>
