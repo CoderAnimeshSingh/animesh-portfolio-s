@@ -32,40 +32,41 @@ endobj
 
 4 0 obj
 <<
-/Length 3200
+/Length 4500
 >>
 stream
 BT
-/F2 20 Tf
-50 720 Td
+/F2 22 Tf
+50 750 Td
 (ANIMESH SINGH) Tj
-0 -25 Td
-/F1 11 Tf
+0 -30 Td
+/F1 12 Tf
 (Email: ani.yug272@gmail.com | Phone: +91-9693856529) Tj
 0 -15 Td
-(LinkedIn: linkedin.com/in/animeshsingh9693 | GitHub: github.com/CoderAnimeshSingh) Tj
+(LinkedIn: linkedin.com/in/animeshsingh9693 | GitHub: github.com/CoderAnimeshSingh | LeetCode: LeetCode Profile) Tj
 
 0 -40 Td
-/F2 14 Tf
+/F2 16 Tf
 (EDUCATION) Tj
-0 -20 Td
-/F1 11 Tf
-(Bachelor of Computer Applications (BCA)) Tj
-350 0 Td
+0 -25 Td
+/F2 12 Tf
+(Bachelor of Computer Applications \(BCA\)) Tj
+300 0 Td
 (August 2023 – Present) Tj
--350 -15 Td
+-300 -15 Td
+/F1 11 Tf
 (Delhi Skill and Entrepreneurship University) Tj
 0 -15 Td
-(Current CGPA: 8.5/10) Tj
+(Current CGPA: 8.5 / 10) Tj
 
-0 -30 Td
-/F2 14 Tf
+0 -35 Td
+/F2 16 Tf
 (TECHNICAL SKILLS) Tj
-0 -20 Td
-/F1 11 Tf
+0 -25 Td
+/F1 12 Tf
 (Programming Languages: Java, Python, C++, JavaScript) Tj
 0 -15 Td
-(Web Development: HTML5, CSS3, React.js, Node.js, Express.js) Tj
+(Web Development: HTML5, CSS3, React.js, Node.js, Express) Tj
 0 -15 Td
 (Databases: MySQL, MongoDB) Tj
 0 -15 Td
@@ -73,64 +74,64 @@ BT
 0 -15 Td
 (Others: Data Structures & Algorithms, OOP, REST APIs) Tj
 
-0 -30 Td
-/F2 14 Tf
+0 -35 Td
+/F2 16 Tf
 (ACADEMIC PROJECTS) Tj
-0 -20 Td
-/F2 11 Tf
+0 -25 Td
+/F2 12 Tf
 (1. Student Management System \(Console-Based – Java\)) Tj
-0 -15 Td
-/F1 10 Tf
+0 -18 Td
+/F1 11 Tf
 (   • Developed a console-based CRUD application for managing student records) Tj
 0 -12 Td
 (   • Implemented file handling and object-oriented design principles) Tj
 0 -12 Td
 (   • Technologies used: Java, File I/O) Tj
 
-0 -20 Td
-/F2 11 Tf
-(2. Personal Portfolio Website \(Responsive – React.js\)) Tj
-0 -15 Td
-/F1 10 Tf
+0 -25 Td
+/F2 12 Tf
+(2. Online Portfolio Website \(Responsive – HTML/CSS/JS\)) Tj
+0 -18 Td
+/F1 11 Tf
 (   • Designed and developed a personal portfolio to showcase projects and skills) Tj
 0 -12 Td
 (   • Ensured mobile responsiveness and cross-browser compatibility) Tj
 0 -12 Td
-(   • Technologies used: React.js, Tailwind CSS, TypeScript) Tj
+(   • Technologies used: HTML5, CSS3, JavaScript) Tj
 
-0 -20 Td
-/F2 11 Tf
+0 -25 Td
+/F2 12 Tf
 (3. Weather App using OpenWeather API \(Frontend\)) Tj
-0 -15 Td
-/F1 10 Tf
+0 -18 Td
+/F1 11 Tf
 (   • Integrated external REST API to fetch real-time weather data based on location) Tj
 0 -12 Td
 (   • Focused on UI/UX and asynchronous JavaScript using Fetch API) Tj
 0 -12 Td
-(   • Technologies used: JavaScript, HTML/CSS, REST API) Tj
+(   • Technologies used: JavaScript, HTML/CSS, API) Tj
 
-0 -30 Td
-/F2 14 Tf
+0 -35 Td
+/F2 16 Tf
 (POSITIONS OF RESPONSIBILITY) Tj
-0 -20 Td
-/F1 11 Tf
+0 -25 Td
+/F1 12 Tf
 (• Founder, TechVerse Nexus – Mentored 1K+ students; curated tech opportunities) Tj
 0 -12 Td
-(  and fostered a collaborative learning community) Tj
-0 -15 Td
+(  and fostering a collaborative learning community.) Tj
+0 -18 Td
 (• Hackathon Organizer – Led and managed 4+ tech hackathons across Delhi NCR,) Tj
 0 -12 Td
-(  ensuring strategic planning and successful execution) Tj
-0 -15 Td
+(  ensuring strategic planning and successful execution.) Tj
+0 -18 Td
 (• Event Coordinator – Contributed to high-profile government and corporate) Tj
 0 -12 Td
-(  tech events) Tj
+(  tech events.) Tj
 
-0 -30 Td
-/F2 14 Tf
+0 -35 Td
+/F2 16 Tf
 (CERTIFICATIONS) Tj
-0 -20 Td
-/F1 11 Tf
+0 -25 Td
+/F1 12 Tf
 (• Java Programming – NPTEL) Tj
 0 -15 Td
 (• Full Stack Web Development & DSA with Java – Apna College) Tj
@@ -161,13 +162,13 @@ xref
 0000000058 00000 n 
 0000000115 00000 n 
 0000000300 00000 n 
-0000003550 00000 n 
-0000003620 00000 n 
+0000004850 00000 n 
+0000004920 00000 n 
 trailer
 <<
 /Size 7
 /Root 1 0 R
 >>
 startxref
-3695
+4995
 %%EOF

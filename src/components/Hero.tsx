@@ -8,10 +8,10 @@ const Hero = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   
   const roles = [
-    'Full Stack Developer',
-    'BCA Student',
+    'Expert Full Stack Developer',
     'Tech Community Leader',
-    'Problem Solver'
+    'Innovation Catalyst',
+    'Digital Solutions Architect'
   ];
 
   useEffect(() => {
@@ -44,7 +44,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16 md:pt-0">
       {/* Background Animation */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 dark:from-gray-900 dark:via-blue-900/20 dark:to-purple-900/20"></div>
       
@@ -53,7 +53,7 @@ const Hero = () => {
         {[...Array(20)].map((_, i) => (
           <div
             key={i}
-            className="absolute w-2 h-2 bg-blue-400/30 rounded-full animate-pulse"
+            className="absolute w-1 h-1 md:w-2 md:h-2 bg-blue-400/30 rounded-full animate-pulse"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
@@ -65,80 +65,81 @@ const Hero = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content */}
-          <div className="text-center lg:text-left">
-            <div className="mb-6">
-              <p className="text-lg text-foreground/70 mb-2 animate-fade-in">
+          <div className="text-center lg:text-left order-2 lg:order-1">
+            <div className="mb-4 md:mb-6">
+              <p className="text-base md:text-lg text-foreground/70 mb-2 animate-fade-in">
                 👋 Hello, I'm
               </p>
-              <h1 className="text-5xl lg:text-7xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4 animate-scale-in">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-3 md:mb-4 animate-scale-in leading-tight">
                 Animesh Singh
               </h1>
-              <div className="text-2xl lg:text-3xl text-foreground/80 h-12 flex items-center justify-center lg:justify-start">
-                <span className="mr-2">I'm a</span>
-                <span className="text-blue-500 font-semibold border-r-2 border-blue-500 pr-1 min-w-[280px] text-left">
+              <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-foreground/80 h-10 md:h-12 flex items-center justify-center lg:justify-start">
+                <span className="mr-2">I'm an</span>
+                <span className="text-blue-500 font-semibold border-r-2 border-blue-500 pr-1 min-w-[200px] sm:min-w-[250px] md:min-w-[280px] text-left">
                   {displayText}
                 </span>
               </div>
             </div>
 
-            <p className="text-lg text-foreground/70 mb-8 max-w-2xl animate-fade-in">
-              BCA student at Delhi Skill and Entrepreneurship University with expertise in Java, Python, and modern web technologies. 
-              Passionate about building scalable applications and leading tech communities.
+            <p className="text-sm sm:text-base md:text-lg text-foreground/70 mb-6 md:mb-8 max-w-2xl animate-fade-in leading-relaxed">
+              Distinguished Full Stack Developer and visionary tech leader with expertise in cutting-edge technologies. 
+              Founder of TechVerse Nexus, mentoring 1K+ developers while architecting scalable solutions that drive digital transformation. 
+              Currently pursuing BCA at DSEU with exceptional academic excellence (8.5 CGPA).
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start mb-6 md:mb-8">
               <button
                 onClick={() => scrollToSection('projects')}
-                className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-3 rounded-lg hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 md:px-8 py-2.5 md:py-3 rounded-lg hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-sm md:text-base"
               >
-                View My Work
+                Explore My Portfolio
               </button>
               <a
                 href="/resume.pdf"
                 download
-                className="border-2 border-blue-500 text-blue-500 px-8 py-3 rounded-lg hover:bg-blue-500 hover:text-white transition-all duration-300 hover:scale-105 text-center"
+                className="border-2 border-blue-500 text-blue-500 px-6 md:px-8 py-2.5 md:py-3 rounded-lg hover:bg-blue-500 hover:text-white transition-all duration-300 hover:scale-105 text-center text-sm md:text-base"
               >
                 Download Resume
               </a>
             </div>
 
             {/* Social Links */}
-            <div className="flex gap-4 justify-center lg:justify-start">
+            <div className="flex gap-3 md:gap-4 justify-center lg:justify-start">
               <a 
                 href="https://github.com/CoderAnimeshSingh" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-all duration-300 hover:scale-110"
+                className="p-2.5 md:p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-all duration-300 hover:scale-110"
               >
-                <Github size={24} />
+                <Github size={20} className="md:w-6 md:h-6" />
               </a>
               <a 
                 href="https://www.linkedin.com/in/animeshsingh9693/" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-all duration-300 hover:scale-110"
+                className="p-2.5 md:p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-all duration-300 hover:scale-110"
               >
-                <Linkedin size={24} />
+                <Linkedin size={20} className="md:w-6 md:h-6" />
               </a>
-              <a href="mailto:ani.yug272@gmail.com" className="p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-all duration-300 hover:scale-110">
-                <Mail size={24} />
+              <a href="mailto:ani.yug272@gmail.com" className="p-2.5 md:p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-all duration-300 hover:scale-110">
+                <Mail size={20} className="md:w-6 md:h-6" />
               </a>
               <button
                 onClick={() => scrollToSection('about')}
-                className="p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-all duration-300 hover:scale-110"
+                className="p-2.5 md:p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-all duration-300 hover:scale-110"
               >
-                <User size={24} />
+                <User size={20} className="md:w-6 md:h-6" />
               </button>
             </div>
           </div>
 
           {/* Profile Image */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center lg:justify-end order-1 lg:order-2">
             <div className="relative">
-              <div className="w-80 h-80 rounded-full overflow-hidden bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 p-2">
+              <div className="w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full overflow-hidden bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 p-2 shadow-2xl">
                 <img
                   src="/lovable-uploads/0f7e98bf-0ea2-4c68-b88f-0b538cfa5200.png"
                   alt="Animesh Singh"
@@ -146,11 +147,14 @@ const Hero = () => {
                 />
               </div>
               {/* Floating icons around avatar */}
-              <div className="absolute -top-4 -right-4 w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center text-white text-xl animate-bounce">
+              <div className="absolute -top-2 md:-top-4 -right-2 md:-right-4 w-8 h-8 md:w-12 md:h-12 bg-blue-500 rounded-lg flex items-center justify-center text-white text-sm md:text-xl animate-bounce">
                 ⚛️
               </div>
-              <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center text-white text-xl animate-bounce" style={{ animationDelay: '0.5s' }}>
+              <div className="absolute -bottom-2 md:-bottom-4 -left-2 md:-left-4 w-8 h-8 md:w-12 md:h-12 bg-purple-500 rounded-lg flex items-center justify-center text-white text-sm md:text-xl animate-bounce" style={{ animationDelay: '0.5s' }}>
                 💻
+              </div>
+              <div className="absolute top-1/2 -right-6 md:-right-8 w-6 h-6 md:w-8 md:h-8 bg-pink-500 rounded-full flex items-center justify-center text-white text-xs md:text-sm animate-pulse">
+                🚀
               </div>
             </div>
           </div>
@@ -158,9 +162,9 @@ const Hero = () => {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-foreground/30 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-foreground/30 rounded-full mt-2 animate-pulse"></div>
+      <div className="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="w-5 h-8 md:w-6 md:h-10 border-2 border-foreground/30 rounded-full flex justify-center">
+          <div className="w-1 h-2 md:h-3 bg-foreground/30 rounded-full mt-1.5 md:mt-2 animate-pulse"></div>
         </div>
       </div>
     </section>

@@ -103,9 +103,54 @@
   }
 }
 
+/* Enhanced mobile-first responsive design */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .text-responsive {
+    font-size: clamp(0.875rem, 2vw, 1rem);
+  }
+  
+  .heading-responsive {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-responsive {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .flex-responsive {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* Touch-friendly interactive elements */
+@media (hover: none) and (pointer: coarse) {
+  .hover-touch {
+    transform: none !important;
+  }
+  
+  .hover-touch:active {
+    transform: scale(0.95);
+  }
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
+}
+
+@media (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
 }
 
 ::-webkit-scrollbar-track {
@@ -127,4 +172,16 @@
 
 .dark ::selection {
   @apply bg-blue-400/30 text-blue-100;
+}
+
+/* Enhanced focus styles for accessibility */
+.focus-visible:focus-visible {
+  @apply outline-2 outline-offset-2 outline-blue-500;
+}
+
+/* Smooth transitions for theme switching */
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
 }
