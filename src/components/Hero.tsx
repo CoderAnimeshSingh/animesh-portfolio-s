@@ -84,7 +84,7 @@ const Hero = () => {
             </div>
 
             <p className="text-sm sm:text-base md:text-lg text-foreground/70 mb-6 md:mb-8 max-w-2xl animate-fade-in leading-relaxed">
-              I am a highly focused and results-driven Full-Stack Developer with expertise in building scalable, high-performance web applications using modern technologies such as React, Node.js, Express, MongoDB, and SQL. With a strong foundation in both front-end and back-end development, I specialize in crafting responsive user interfaces, implementing robust server-side logic, and delivering end-to-end digital solutions that align with real-world business needs. I adhere to industry best practices, write clean and maintainable code, and continuously explore emerging technologies to deliver innovative, reliable, and production-ready applications.
+              I'm a Full-Stack Developer specializing in building scalable, high-quality web applications using React, Node.js, Express, MongoDB, and SQL. I create responsive interfaces, efficient backend systems, and deliver end-to-end solutions with clean code and modern development practices. I'm passionate about solving real-world problems through technology and continuously refining my skills to stay ahead in the field.
             </p>
 
             {/* CTA Buttons */}

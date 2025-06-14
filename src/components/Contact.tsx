@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Github, Linkedin, Send, Instagram, Twitter, Facebook } from 'lucide-react';
 
@@ -25,6 +24,9 @@ Email: ${formData.email}
 
 Message:
 ${formData.message}
+
+--
+Sent from your portfolio website contact form.
       `);
       
       const mailtoLink = `mailto:ani.yug272@gmail.com?subject=${subject}&body=${body}`;
@@ -197,7 +199,7 @@ ${formData.message}
             
             {submitStatus === 'success' && (
               <div className="mb-4 p-3 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg text-green-700 dark:text-green-400 text-sm">
-                Your default email client will open with the message. Please send it from there.
+                Your email client has been opened with the message. Please send it to complete your contact request.
               </div>
             )}
             
