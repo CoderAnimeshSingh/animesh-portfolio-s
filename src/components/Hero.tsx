@@ -88,10 +88,10 @@ const Hero = () => {
                 💼 Full-Stack Developer | Crafting Scalable & Impactful Web Solutions
               </h3>
               <p className="text-sm sm:text-base md:text-lg text-foreground/70 max-w-2xl animate-fade-in leading-relaxed">
-                I'm a dedicated Full-Stack Developer with strong expertise in both front-end and back-end technologies. I build clean, scalable, and high-performance web applications using tools like React, Node.js, Express, MongoDB, and SQL.
+                Dedicated Full-Stack Developer specializing in modern web technologies including React, Node.js, Express, MongoDB, and cloud architecture. I transform complex business requirements into scalable, high-performance applications with clean code and exceptional user experiences.
               </p>
               <p className="text-sm sm:text-base md:text-lg text-foreground/70 max-w-2xl animate-fade-in leading-relaxed mt-3">
-                My focus is on delivering responsive UI/UX, writing efficient code, and developing end-to-end solutions that solve real-world problems. I follow modern development practices, prioritize code quality, and continuously explore new technologies to stay ahead in the field.
+                As Founder of TechVerse Nexus community (1000+ developers) and lead organizer of 4+ major hackathons, I combine technical expertise with leadership to drive innovation and mentor the next generation of developers.
               </p>
             </div>
 
