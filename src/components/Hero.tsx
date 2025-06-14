@@ -84,9 +84,7 @@ const Hero = () => {
             </div>
 
             <p className="text-sm sm:text-base md:text-lg text-foreground/70 mb-6 md:mb-8 max-w-2xl animate-fade-in leading-relaxed">
-              Distinguished Full Stack Developer and visionary tech leader with expertise in cutting-edge technologies. 
-              Founder of TechVerse Nexus, mentoring 1K+ developers while architecting scalable solutions that drive digital transformation. 
-              Currently pursuing BCA at DSEU with exceptional academic excellence (8.5 CGPA).
+              I am a highly focused and results-driven Full-Stack Developer with expertise in building scalable, high-performance web applications using modern technologies such as React, Node.js, Express, MongoDB, and SQL. With a strong foundation in both front-end and back-end development, I specialize in crafting responsive user interfaces, implementing robust server-side logic, and delivering end-to-end digital solutions that align with real-world business needs. I adhere to industry best practices, write clean and maintainable code, and continuously explore emerging technologies to deliver innovative, reliable, and production-ready applications.
             </p>
 
             {/* CTA Buttons */}
