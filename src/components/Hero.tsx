@@ -6,10 +6,10 @@ const Hero = () => {
   const [currentDescriptionIndex, setCurrentDescriptionIndex] = useState(0);
   
   const descriptions = [
-    "I'm a full-stack developer.",
-    "I am a MERN-stack developer.",
+    "I'm a Full-stack developer.",
+    "I'm a MERN-stack developer.",
     "I'm a Java developer.",
-    "I'm a Web3 learner.",
+    "I'm a Web3 beginner",
     "I'm a tech community founder."
   ];
 
@@ -150,17 +150,6 @@ const Hero = () => {
                     alt="Animesh Singh - Full Stack Developer"
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                   />
-                </div>
-
-                {/* Fixed Floating Tech Icons - Perfect Size */}
-                <div className="hidden sm:block absolute -top-2 -right-2 w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white shadow-lg animate-bounce text-lg">
-                  ⚛️
-                </div>
-                <div className="hidden sm:block absolute -bottom-2 -left-2 w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white shadow-lg animate-bounce delay-300 text-lg">
-                  🟢
-                </div>
-                <div className="hidden sm:block absolute top-1/2 -left-6 w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center text-white shadow-lg animate-bounce delay-500 text-sm">
-                  📜
                 </div>
               </div>
             </div>
