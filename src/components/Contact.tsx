@@ -21,7 +21,7 @@ const Contact = () => {
     e.preventDefault();
     
     // Create Gmail compose URL with pre-filled data
-    const gmailUrl = `https://mail.google.com/mail/u/0/?fs=1&to=animeshsingh9693@gmail.com&su=${encodeURIComponent(formData.subject || 'Contact from Portfolio Website')}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`;
+    const gmailUrl = `https://mail.google.com/mail/u/0/?fs=1&to=ani.yug272@gmail.com&su=${encodeURIComponent(formData.subject || 'Contact from Portfolio Website')}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`;
     
     // Open Gmail in new tab
     window.open(gmailUrl, '_blank');
@@ -30,19 +30,25 @@ const Contact = () => {
     setFormData({ name: '', email: '', subject: '', message: '' });
   };
 
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "919693856529";
+    const message = encodeURIComponent("Hi Animesh! I found your portfolio and would like to discuss a potential opportunity with you.");
+    window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+  };
+
   const contactInfo = [
     {
       icon: Mail,
       label: 'Email',
-      value: 'animeshsingh9693@gmail.com',
-      href: 'mailto:animeshsingh9693@gmail.com',
+      value: 'ani.yug272@gmail.com',
+      href: 'mailto:ani.yug272@gmail.com',
       color: 'text-blue-500'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+91 96969 XXXXX',
-      href: 'tel:+919696969693',
+      value: '+91 96938 56529',
+      href: 'tel:+919693856529',
       color: 'text-green-500'
     },
     {
@@ -70,7 +76,7 @@ const Contact = () => {
     {
       icon: Mail,
       name: 'Email',
-      href: 'mailto:animeshsingh9693@gmail.com',
+      href: 'mailto:ani.yug272@gmail.com',
       color: 'hover:text-red-500'
     }
   ];
@@ -167,17 +173,28 @@ const Contact = () => {
                 ></textarea>
               </div>
 
-              <button
-                type="submit"
-                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-semibold shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base"
-              >
-                <Send size={18} />
-                <span>Send Message</span>
-              </button>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <button
+                  type="submit"
+                  className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-semibold shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base"
+                >
+                  <Send size={18} />
+                  <span>Send Email</span>
+                </button>
+                
+                <button
+                  type="button"
+                  onClick={handleWhatsAppClick}
+                  className="flex-1 bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-semibold shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base"
+                >
+                  <MessageCircle size={18} />
+                  <span>WhatsApp</span>
+                </button>
+              </div>
             </form>
 
             <p className="text-xs sm:text-sm text-foreground/60 mt-4 text-center">
-              * This will open your email client to send the message directly to my Gmail.
+              * Email opens Gmail, WhatsApp opens direct chat with pre-filled message.
             </p>
           </div>
 
@@ -203,6 +220,26 @@ const Contact = () => {
                     </div>
                   </a>
                 ))}
+              </div>
+            </div>
+
+            {/* WhatsApp Quick Contact */}
+            <div className="bg-gradient-to-r from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 border border-green-200 dark:border-green-700/50 rounded-xl sm:rounded-2xl p-6 sm:p-8">
+              <div className="text-center">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-xl sm:rounded-2xl flex items-center justify-center text-white text-xl sm:text-2xl mb-4 mx-auto">
+                  <MessageCircle size={24} />
+                </div>
+                <h4 className="font-bold text-foreground text-lg sm:text-xl mb-2">WhatsApp Direct</h4>
+                <p className="text-foreground/70 text-sm sm:text-base leading-relaxed mb-4">
+                  Get instant response via WhatsApp for urgent inquiries or quick discussions.
+                </p>
+                <button
+                  onClick={handleWhatsAppClick}
+                  className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 mx-auto"
+                >
+                  <MessageCircle size={18} />
+                  <span>Chat on WhatsApp</span>
+                </button>
               </div>
             </div>
 
@@ -234,7 +271,7 @@ const Contact = () => {
                 </div>
                 <h4 className="font-bold text-foreground text-lg sm:text-xl mb-2">Quick Response</h4>
                 <p className="text-foreground/70 text-sm sm:text-base leading-relaxed">
-                  I typically respond within 24 hours. For urgent matters, feel free to reach out via phone or LinkedIn.
+                  I typically respond within 24 hours via email or instantly via WhatsApp for urgent matters.
                 </p>
               </div>
             </div>

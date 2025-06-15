@@ -1,8 +1,31 @@
 
-import React from 'react';
-import { Github, Linkedin, Mail, Download, ExternalLink, MapPin, Calendar } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Github, Linkedin, Mail, Download, ExternalLink, MapPin, Calendar, MessageCircle } from 'lucide-react';
 
 const Hero = () => {
+  const [currentDescriptionIndex, setCurrentDescriptionIndex] = useState(0);
+  
+  const descriptions = [
+    "I'm a full-stack developer.",
+    "I am a MERN-stack developer.",
+    "I'm a Java developer.",
+    "I'm a Web3 learner.",
+    "I'm a tech community founder."
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentDescriptionIndex((prev) => (prev + 1) % descriptions.length);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "919693856529";
+    const message = encodeURIComponent("Hi Animesh! I found your portfolio and would like to discuss a potential opportunity with you.");
+    window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16 pb-8">
       {/* Enhanced Background with better mobile performance */}
@@ -30,9 +53,12 @@ const Hero = () => {
                 </span>
               </h1>
               
-              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-blue-600 dark:text-blue-400">
-                Full-Stack Developer
-              </h2>
+              {/* Rotating Descriptions */}
+              <div className="h-12 sm:h-16 flex items-center justify-center lg:justify-start">
+                <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-blue-600 dark:text-blue-400 transition-all duration-500">
+                  {descriptions[currentDescriptionIndex]}
+                </h2>
+              </div>
             </div>
 
             {/* Bio - Mobile Responsive */}
@@ -63,6 +89,14 @@ const Hero = () => {
                 <ExternalLink size={16} className="group-hover:translate-x-1 transition-transform" />
               </a>
               
+              <button
+                onClick={handleWhatsAppClick}
+                className="group bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-semibold shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 text-sm sm:text-base"
+              >
+                <MessageCircle size={18} />
+                <span>WhatsApp</span>
+              </button>
+              
               <a
                 href="/resume.pdf"
                 download
@@ -92,7 +126,7 @@ const Hero = () => {
                 <Linkedin size={24} className="text-foreground group-hover:text-blue-600 transition-colors" />
               </a>
               <a
-                href="mailto:animeshsingh9693@gmail.com"
+                href="mailto:ani.yug272@gmail.com"
                 className="group p-3 bg-background/80 border border-border rounded-xl shadow-md hover:shadow-xl transition-all duration-300 hover:scale-110"
               >
                 <Mail size={24} className="text-foreground group-hover:text-purple-500 transition-colors" />
@@ -118,14 +152,14 @@ const Hero = () => {
                   />
                 </div>
 
-                {/* Floating Tech Icons - Hidden on small screens */}
-                <div className="hidden sm:block absolute -top-4 -right-4 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white shadow-lg animate-bounce">
+                {/* Fixed Floating Tech Icons - Perfect Size */}
+                <div className="hidden sm:block absolute -top-2 -right-2 w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white shadow-lg animate-bounce text-lg">
                   ⚛️
                 </div>
-                <div className="hidden sm:block absolute -bottom-4 -left-4 w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white shadow-lg animate-bounce delay-300">
+                <div className="hidden sm:block absolute -bottom-2 -left-2 w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white shadow-lg animate-bounce delay-300 text-lg">
                   🟢
                 </div>
-                <div className="hidden sm:block absolute top-1/2 -left-8 w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center text-white shadow-lg animate-bounce delay-500">
+                <div className="hidden sm:block absolute top-1/2 -left-6 w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center text-white shadow-lg animate-bounce delay-500 text-sm">
                   📜
                 </div>
               </div>
