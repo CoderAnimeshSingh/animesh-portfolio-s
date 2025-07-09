@@ -91,7 +91,7 @@ Before you begin, ensure you have the following installed:
 animesh-portfolio/
 ├── public/
 │   ├── images/              # Profile & project images
-│   ├── resume.pdf           # Downloadable resume
+│   ├── Animesh Singh Resume.pdf           # Downloadable resume
 │   └── favicon.ico          # Site favicon
 ├── src/
 │   ├── components/          # Reusable UI components

@@ -1,36 +1,30 @@
 
 import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, Download, ExternalLink, MapPin, Calendar, MessageCircle } from 'lucide-react';
+import { RESUME_PATH, RESUME_DOWNLOAD_NAME, WHATSAPP_NUMBER, WHATSAPP_MESSAGE, DESCRIPTIONS } from '../lib/constants';
+import { Description } from '../lib/types';
 
 const Hero = () => {
   const [currentDescriptionIndex, setCurrentDescriptionIndex] = useState(0);
   
-  const descriptions = [
-    "I'm a Full-stack developer.",
-    "I'm a MERN-stack developer.",
-    "I'm a Java developer.",
-    "I'm a Web3 beginner",
-    "I'm a tech community founder."
-  ];
-
   useEffect(() => {
+    const currentDelay = DESCRIPTIONS[currentDescriptionIndex].delay;
     const interval = setInterval(() => {
-      setCurrentDescriptionIndex((prev) => (prev + 1) % descriptions.length);
-    }, 2000);
+      setCurrentDescriptionIndex((prev) => (prev + 1) % DESCRIPTIONS.length);
+    }, currentDelay);
     return () => clearInterval(interval);
-  }, []);
+  }, [currentDescriptionIndex]);
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = "919693856529";
-    const message = encodeURIComponent("Hi Animesh! I found your portfolio and would like to discuss a potential opportunity with you.");
-    window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+    const message = encodeURIComponent(WHATSAPP_MESSAGE);
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank');
   };
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16 pb-8">
       {/* Enhanced Background with better mobile performance */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50/80 via-white to-purple-50/80 dark:from-gray-900/90 dark:via-gray-800/90 dark:to-purple-900/20"></div>
-      <div className="absolute inset-0 opacity-30" style={{
+      <div className="absolute inset-0 opacity-30 pattern-background" style={{
         backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
       }}></div>
       
@@ -56,7 +50,7 @@ const Hero = () => {
               {/* Rotating Descriptions */}
               <div className="h-12 sm:h-16 flex items-center justify-center lg:justify-start">
                 <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-blue-600 dark:text-blue-400 transition-all duration-500">
-                  {descriptions[currentDescriptionIndex]}
+                  {DESCRIPTIONS[currentDescriptionIndex].text}
                 </h2>
               </div>
             </div>
@@ -98,8 +92,8 @@ const Hero = () => {
               </button>
               
               <a
-                href="/resume.pdf"
-                download
+                href={RESUME_PATH}
+                download={RESUME_DOWNLOAD_NAME}
                 className="group border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105 text-sm sm:text-base"
               >
                 <Download size={18} />

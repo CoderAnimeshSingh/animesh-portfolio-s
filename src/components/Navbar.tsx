@@ -1,7 +1,9 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Menu, Sun, Moon, Download } from 'lucide-react';
-import { useTheme } from '../context/ThemeContext';
+import { useTheme } from '../hooks/use-theme';
+import { RESUME_PATH, RESUME_DOWNLOAD_NAME, NAV_ITEMS } from '../lib/constants';
+import { NavItem } from '../lib/types';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,13 +18,13 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (sectionId: string) => {
+  const scrollToSection = useCallback((sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
     setIsMobileMenuOpen(false);
-  };
+  }, [setIsMobileMenuOpen]);
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
@@ -40,13 +42,13 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
+              {NAV_ITEMS.map((item: NavItem) => (
                 <button
-                  key={item}
-                  onClick={() => scrollToSection(item.toLowerCase())}
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
                   className="text-foreground/80 hover:text-foreground transition-colors duration-300 hover:scale-105 transform"
                 >
-                  {item}
+                  {item.label}
                 </button>
               ))}
             </div>
@@ -62,8 +64,8 @@ const Navbar = () => {
             </button>
             
             <a
-              href="/resume.pdf"
-              download
+              href={RESUME_PATH}
+              download={RESUME_DOWNLOAD_NAME}
               className="hidden sm:flex items-center space-x-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded-lg hover:scale-105 transition-transform duration-300"
             >
               <Download size={16} />
@@ -72,6 +74,7 @@ const Navbar = () => {
 
             {/* Mobile menu button */}
             <button
+              title="Toggle mobile menu"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="md:hidden p-2 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors duration-300"
             >
@@ -84,18 +87,18 @@ const Navbar = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background/95 backdrop-blur-md rounded-lg mt-2">
-              {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
+              {NAV_ITEMS.map((item: NavItem) => (
                 <button
-                  key={item}
-                  onClick={() => scrollToSection(item.toLowerCase())}
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
                   className="block w-full text-left px-3 py-2 text-foreground/80 hover:text-foreground hover:bg-secondary/50 rounded-md transition-colors duration-300"
                 >
-                  {item}
+                  {item.label}
                 </button>
               ))}
               <a
-                href="/resume.pdf"
-                download
+                href={RESUME_PATH}
+                download={RESUME_DOWNLOAD_NAME}
                 className="flex items-center space-x-2 px-3 py-2 text-blue-500 hover:bg-secondary/50 rounded-md transition-colors duration-300"
               >
                 <Download size={16} />

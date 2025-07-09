@@ -1,18 +1,19 @@
 
 import React from 'react';
 import { Heart, Code, Coffee, Github, Linkedin, Mail, Instagram, Twitter, Facebook } from 'lucide-react';
+import { RESUME_PATH, RESUME_DOWNLOAD_NAME, GITHUB_URL } from '../lib/constants';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-secondary/30 border-t border-border">
+    <footer className="bg-secondary/30 border-t border-border" role="contentinfo">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent mb-4">
-              Animesh Singh
+              {'Animesh Singh'}
             </h3>
             <p className="text-foreground/70 mb-4">
               Full Stack Developer passionate about creating beautiful and functional web applications.
@@ -30,7 +31,7 @@ const Footer = () => {
           {/* Quick Links */}
           <div>
             <h4 className="font-semibold text-foreground mb-4">Quick Links</h4>
-            <div className="space-y-2">
+            <div className="space-y-2" role="navigation">
               {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((link) => (
                 <button
                   key={link}
@@ -53,7 +54,7 @@ const Footer = () => {
             <h4 className="font-semibold text-foreground mb-4">Follow Me</h4>
             <div className="space-y-3">
               <a
-                href="https://github.com/CoderAnimeshSingh"
+                href={GITHUB_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-foreground/70 hover:text-foreground transition-colors duration-300"
@@ -128,10 +129,10 @@ const Footer = () => {
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a
-              href="/resume.pdf"
-              download
-              className="text-foreground/60 hover:text-foreground text-sm transition-colors duration-300"
-            >
+                href={RESUME_PATH}
+                download={RESUME_DOWNLOAD_NAME}
+                className="text-foreground/60 hover:text-foreground text-sm transition-colors duration-300"
+              >
               Download Resume
             </a>
             <a
