@@ -57,7 +57,7 @@ const Hero = () => {
 
             {/* Bio - Mobile Responsive */}
             <p className="text-sm sm:text-base lg:text-lg text-foreground/80 leading-relaxed max-w-2xl mx-auto lg:mx-0 px-2 sm:px-0">
-              I'm a passionate Full-Stack Developer with expertise in creating scalable, high-performance web applications. I specialize in React, Node.js, Express, MongoDB, and SQL, delivering end-to-end solutions with clean, maintainable code. My focus is on building responsive user interfaces, robust backend systems, and implementing modern development practices. I thrive on solving complex problems through innovative technology solutions and am committed to continuous learning and staying at the forefront of web development trends.
+              Full-Stack Developer specializing in scalable web applications using React, Node.js, MongoDB, and modern technologies. Building responsive UIs and robust backend systems with clean, maintainable code.
             </p>
 
             {/* Location & Experience - Mobile Stack */}
@@ -90,15 +90,6 @@ const Hero = () => {
                 <MessageCircle size={18} />
                 <span>WhatsApp</span>
               </button>
-              
-              <a
-                href={RESUME_PATH}
-                download={RESUME_DOWNLOAD_NAME}
-                className="group border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105 text-sm sm:text-base"
-              >
-                <Download size={18} />
-                <span>Download Resume</span>
-              </a>
             </div>
 
             {/* Social Links - Mobile Optimized */}
@@ -129,7 +120,7 @@ const Hero = () => {
           </div>
 
           {/* Right Content - Profile Section - Mobile Optimized */}
-          <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+          <div className="order-1 lg:order-2 flex justify-center">
             <div className="relative group">
               {/* Profile Image Container - Responsive */}
               <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96">

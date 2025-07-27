@@ -12,7 +12,7 @@ import {
 
 import { cn } from "@/lib/utils"
 import { Label } from "@/components/ui/label"
-import { useFormField } from "./form-utils";
+
 
 const Form = FormProvider
 
@@ -166,6 +166,7 @@ const FormMessage = React.forwardRef<
 FormMessage.displayName = "FormMessage"
 
 export {
+  useFormField,
   Form,
   FormItem,
   FormLabel,

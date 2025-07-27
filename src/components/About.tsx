@@ -50,19 +50,15 @@ const About = () => {
           <div className="space-y-6 lg:space-y-8">
             <div className="prose prose-lg dark:prose-invert max-w-none">
               <p className="text-sm sm:text-base lg:text-lg text-foreground/80 leading-relaxed mb-4 sm:mb-6">
-                I am a driven and visionary Full-Stack Developer with a proven track record of building scalable, high-performance digital solutions. With a strong foundation in both software engineering and community leadership, I specialize in transforming complex ideas into impactful, production-grade applications.
+                Full-Stack Developer with expertise in building scalable, high-performance applications. Specializing in transforming complex ideas into production-grade solutions.
               </p>
               
               <p className="text-sm sm:text-base lg:text-lg text-foreground/80 leading-relaxed mb-4 sm:mb-6">
-                Currently pursuing a Bachelor of Computer Applications at Delhi Skill and Entrepreneurship University, I maintain an exceptional CGPA of 8.5/10, showcasing consistent academic excellence coupled with deep practical expertise.
-              </p>
-              
-              <p className="text-sm sm:text-base lg:text-lg text-foreground/80 leading-relaxed mb-4 sm:mb-6">
-                As the Founder of TechVerse Nexus, I've built a thriving developer community of over 1,000 members, cultivating innovation, mentorship, and collaboration at scale. My work bridges cutting-edge technologies like Java, Python, C++, JavaScript, React, Node.js, MongoDB, and cloud-native architectures, with a commitment to modern engineering principles and enterprise-grade standards.
+                BCA student at Delhi Skill and Entrepreneurship University with 8.5/10 CGPA, combining academic excellence with practical expertise.
               </p>
               
               <p className="text-sm sm:text-base lg:text-lg text-foreground/80 leading-relaxed">
-                Beyond development, I have led and organized multiple high-profile hackathons and tech summits across Delhi NCR, partnering with academic institutions and government stakeholders. I am deeply invested in mentoring aspiring developers, fostering technical growth, and shaping the future of India's digital talent ecosystem.
+                Founder of TechVerse Nexus with 1,000+ developer community. Expert in Java, Python, JavaScript, React, Node.js, MongoDB. Leading hackathons across Delhi NCR and mentoring aspiring developers.
               </p>
             </div>
           </div>
@@ -126,59 +122,66 @@ const About = () => {
           
           <div className="space-y-6 sm:space-y-8 lg:space-y-12">
             {/* Timeline Items - Mobile Stack */}
-            <div className="grid gap-6 sm:gap-8">
-              <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-6 group">
-                <div className="flex-shrink-0 w-full sm:w-32 lg:w-40">
-                  <span className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-semibold">
-                    2023 – Present
+            <div className="space-y-8 relative">
+              {/* Timeline Line */}
+              <div className="absolute left-4 sm:left-20 lg:left-24 top-8 bottom-8 w-0.5 bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500 hidden sm:block"></div>
+              
+              <div className="relative flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 group hover:bg-background/60 p-4 rounded-xl transition-all duration-300">
+                <div className="flex-shrink-0 w-full sm:w-32 lg:w-40 relative">
+                  <span className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg animate-pulse">
+                    🔥 Present
                   </span>
+                  <div className="absolute -left-2 top-1/2 transform -translate-y-1/2 w-4 h-4 bg-blue-500 rounded-full shadow-lg hidden sm:block animate-ping"></div>
                 </div>
-                <div className="flex-1">
-                  <h4 className="text-lg sm:text-xl font-bold text-foreground mb-2">BCA Student at DSEU</h4>
-                  <p className="text-sm sm:text-base text-foreground/70 leading-relaxed">
-                    Consistently achieving academic distinction with a focus on real-world application of computing concepts.
+                <div className="flex-1 sm:ml-8">
+                  <h4 className="text-xl font-bold text-foreground mb-2 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">BCA Student at DSEU</h4>
+                  <p className="text-base text-foreground/70 leading-relaxed">
+                    Achieving academic excellence (8.5 CGPA) with real-world computing applications.
                   </p>
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-6 group">
-                <div className="flex-shrink-0 w-full sm:w-32 lg:w-40">
-                  <span className="inline-block bg-gradient-to-r from-green-500 to-blue-600 text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-semibold">
-                    2023 – Present
+              <div className="relative flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 group hover:bg-background/60 p-4 rounded-xl transition-all duration-300">
+                <div className="flex-shrink-0 w-full sm:w-32 lg:w-40 relative">
+                  <span className="inline-block bg-gradient-to-r from-green-500 to-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg animate-pulse">
+                    🚀 Present
                   </span>
+                  <div className="absolute -left-2 top-1/2 transform -translate-y-1/2 w-4 h-4 bg-green-500 rounded-full shadow-lg hidden sm:block animate-ping"></div>
                 </div>
-                <div className="flex-1">
-                  <h4 className="text-lg sm:text-xl font-bold text-foreground mb-2">Founder, TechVerse Nexus</h4>
-                  <p className="text-sm sm:text-base text-foreground/70 leading-relaxed">
-                    Established a dynamic tech community of 1K+ developers; leading initiatives on mentorship, skill development, and collaborative innovation.
+                <div className="flex-1 sm:ml-8">
+                  <h4 className="text-xl font-bold text-foreground mb-2 bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">Founder, TechVerse Nexus</h4>
+                  <p className="text-base text-foreground/70 leading-relaxed">
+                    Leading 1K+ developer community focused on mentorship and innovation.
                   </p>
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-6 group">
-                <div className="flex-shrink-0 w-full sm:w-32 lg:w-40">
-                  <span className="inline-block bg-gradient-to-r from-purple-500 to-pink-600 text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-semibold">
+              <div className="relative flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 group hover:bg-background/60 p-4 rounded-xl transition-all duration-300">
+                <div className="flex-shrink-0 w-full sm:w-32 lg:w-40 relative">
+                  <span className="inline-block bg-gradient-to-r from-purple-500 to-pink-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
                     2023 – 2024
                   </span>
+                  <div className="absolute -left-2 top-1/2 transform -translate-y-1/2 w-4 h-4 bg-purple-500 rounded-full shadow-lg hidden sm:block"></div>
                 </div>
-                <div className="flex-1">
-                  <h4 className="text-lg sm:text-xl font-bold text-foreground mb-2">Hackathon & Tech Event Leadership</h4>
-                  <p className="text-sm sm:text-base text-foreground/70 leading-relaxed">
-                    Spearheaded and executed 4+ major hackathons and tech summits across Delhi NCR; ensured exceptional participant engagement.
+                <div className="flex-1 sm:ml-8">
+                  <h4 className="text-xl font-bold text-foreground mb-2">Hackathon Leadership</h4>
+                  <p className="text-base text-foreground/70 leading-relaxed">
+                    Organized 4+ major hackathons and tech events across Delhi NCR.
                   </p>
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-6 group">
-                <div className="flex-shrink-0 w-full sm:w-32 lg:w-40">
-                  <span className="inline-block bg-gradient-to-r from-orange-500 to-red-600 text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-semibold">
-                    2024 – Present
+              <div className="relative flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 group hover:bg-background/60 p-4 rounded-xl transition-all duration-300">
+                <div className="flex-shrink-0 w-full sm:w-32 lg:w-40 relative">
+                  <span className="inline-block bg-gradient-to-r from-orange-500 to-red-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg animate-pulse">
+                    ⚡ Present
                   </span>
+                  <div className="absolute -left-2 top-1/2 transform -translate-y-1/2 w-4 h-4 bg-orange-500 rounded-full shadow-lg hidden sm:block animate-ping"></div>
                 </div>
-                <div className="flex-1">
-                  <h4 className="text-lg sm:text-xl font-bold text-foreground mb-2">Industry Collaboration & Partnerships</h4>
-                  <p className="text-sm sm:text-base text-foreground/70 leading-relaxed">
-                    Working with government and corporate entities to lead large-scale tech initiatives and foster innovation ecosystems.
+                <div className="flex-1 sm:ml-8">
+                  <h4 className="text-xl font-bold text-foreground mb-2 bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Industry Partnerships</h4>
+                  <p className="text-base text-foreground/70 leading-relaxed">
+                    Collaborating with government and corporate entities on large-scale tech initiatives.
                   </p>
                 </div>
               </div>
