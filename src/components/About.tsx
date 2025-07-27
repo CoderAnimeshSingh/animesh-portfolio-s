@@ -158,15 +158,15 @@ const About = () => {
 
               <div className="relative flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 group hover:bg-background/60 p-4 rounded-xl transition-all duration-300">
                 <div className="flex-shrink-0 w-full sm:w-32 lg:w-40 relative">
-                  <span className="inline-block bg-gradient-to-r from-purple-500 to-pink-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
-                    2023 – 2024
+                  <span className="inline-block bg-gradient-to-r from-purple-500 to-pink-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg animate-pulse">
+                    🎯 Present
                   </span>
-                  <div className="absolute -left-2 top-1/2 transform -translate-y-1/2 w-4 h-4 bg-purple-500 rounded-full shadow-lg hidden sm:block"></div>
+                  <div className="absolute -left-2 top-1/2 transform -translate-y-1/2 w-4 h-4 bg-purple-500 rounded-full shadow-lg hidden sm:block animate-ping"></div>
                 </div>
                 <div className="flex-1 sm:ml-8">
-                  <h4 className="text-xl font-bold text-foreground mb-2">Hackathon Leadership</h4>
+                  <h4 className="text-xl font-bold text-foreground mb-2 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Tech Events & Hackathon Leadership</h4>
                   <p className="text-base text-foreground/70 leading-relaxed">
-                    Organized 4+ major hackathons and tech events across Delhi NCR.
+                    Organizing 4+ major hackathons and tech events across Delhi NCR, fostering innovation ecosystem.
                   </p>
                 </div>
               </div>
