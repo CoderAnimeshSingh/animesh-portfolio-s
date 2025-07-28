@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import StatsCounter from '../components/StatsCounter';
-import TechStack from '../components/TechStack';
+
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import TestimonialsCarousel from '../components/TestimonialsCarousel';
@@ -20,7 +20,6 @@ const Index = () => {
         <Hero />
         <About />
         <StatsCounter />
-        <TechStack />
         <Skills />
         <Projects />
         <TestimonialsCarousel />

@@ -104,12 +104,13 @@ const Hero = () => {
 
           {/* Right Content - Profile Section */}
           <div className="order-1 lg:order-2 flex justify-center">
-            <div className="w-80 h-80 lg:w-96 lg:h-96">
+            <div className="relative w-80 h-80 lg:w-96 lg:h-96 mx-auto">
               <img
-                src="/lovable-uploads/0f7e98bf-0ea2-4c68-b88f-0b538cfa5200.png"
+                src="/lovable-uploads/6a13d721-693e-4873-a475-9572fc869967.png"
                 alt="Animesh Singh"
-                className="w-full h-full object-cover rounded-full border-4 border-gray-200 dark:border-gray-700"
+                className="w-full h-full object-cover rounded-full border-4 border-primary/20 shadow-2xl hover:shadow-primary/25 transition-all duration-500 hover:scale-105"
               />
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 animate-pulse"></div>
             </div>
           </div>
         </div>

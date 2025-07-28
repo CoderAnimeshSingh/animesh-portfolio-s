@@ -27,8 +27,7 @@ const Skills = () => {
       skills: [
         { name: 'MySQL', level: 85, icon: '🗃️' },
         { name: 'MongoDB', level: 80, icon: '🍃' },
-        { name: 'Git', level: 90, icon: '📝' },
-        { name: 'GitHub', level: 88, icon: '🐙' },
+        { name: 'Git/GitHub', level: 90, icon: '📝' },
         { name: 'VS Code', level: 95, icon: '💻' },
         { name: 'Postman', level: 85, icon: '📮' }
       ]

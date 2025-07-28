@@ -8,17 +8,6 @@ const Projects = () => {
   
   const projects = [
     {
-      id: 1,
-      title: 'Student Management System',
-      description: 'A console-based CRUD application for managing student records with file handling and object-oriented design principles. Developed using Java with efficient data management.',
-      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500',
-      tags: ['Java', 'File I/O', 'OOP', 'CRUD'],
-      category: 'Academic',
-      githubUrl: 'https://github.com/CoderAnimeshSingh/student-management-system',
-      liveUrl: '#',
-      featured: true
-    },
-    {
       id: 2,
       title: 'Personal Portfolio Website',
       description: 'A responsive personal portfolio website to showcase projects and skills. Built with React.js and Tailwind CSS with modern design principles.',
@@ -26,17 +15,6 @@ const Projects = () => {
       tags: ['React.js', 'Tailwind CSS', 'TypeScript', 'Responsive'],
       category: 'Web Development',
       githubUrl: 'https://github.com/CoderAnimeshSingh/portfolio-website',
-      liveUrl: '#',
-      featured: true
-    },
-    {
-      id: 3,
-      title: 'Weather App using OpenWeather API',
-      description: 'A frontend weather application that integrates external REST API to fetch real-time weather data based on location with focus on UI/UX design.',
-      image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500',
-      tags: ['JavaScript', 'HTML/CSS', 'API', 'Fetch API'],
-      category: 'Frontend',
-      githubUrl: 'https://github.com/CoderAnimeshSingh/weather-app',
       liveUrl: '#',
       featured: true
     },
