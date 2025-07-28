@@ -205,18 +205,6 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📞 Contact
-
-**Animesh Singh** - Full Stack Developer
-
-- 🌐 Website: [animeshsingh.dev](https://animeshsingh.dev)
-- 📧 Email: [animesh.singh@example.com](mailto:animesh.singh@example.com)
-- 💼 LinkedIn: [linkedin.com/in/animeshsingh](https://linkedin.com/in/animeshsingh)
-- 🐙 GitHub: [github.com/animeshsingh](https://github.com/animeshsingh)
-- 🐦 Twitter: [@animeshsingh](https://twitter.com/animeshsingh)
-
----
-
 <div align="center">
 
 ### 🌟 Star this repository if you found it helpful!
