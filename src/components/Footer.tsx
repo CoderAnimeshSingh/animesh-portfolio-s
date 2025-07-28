@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { Heart, Code, Coffee, Github, Linkedin, Mail, Instagram, Twitter, Facebook } from 'lucide-react';
-import { RESUME_PATH, RESUME_DOWNLOAD_NAME, GITHUB_URL } from '../lib/constants';
+import { Github, Linkedin, Mail, Instagram, Twitter, Facebook } from 'lucide-react';
+import { GITHUB_URL } from '../lib/constants';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -15,17 +15,9 @@ const Footer = () => {
             <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent mb-4">
               {'Animesh Singh'}
             </h3>
-            <p className="text-foreground/70 mb-4">
+            <p className="text-foreground/70">
               Full Stack Developer passionate about creating beautiful and functional web applications.
             </p>
-            <div className="flex items-center space-x-2 text-foreground/60">
-              <span>Made with</span>
-              <Heart size={16} className="text-red-500" />
-              <span>and</span>
-              <Code size={16} className="text-blue-500" />
-              <span>and lots of</span>
-              <Coffee size={16} className="text-yellow-600" />
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -129,17 +121,10 @@ const Footer = () => {
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a
-                href={RESUME_PATH}
-                download={RESUME_DOWNLOAD_NAME}
-                className="text-foreground/60 hover:text-foreground text-sm transition-colors duration-300"
-              >
-              Download Resume
-            </a>
-            <a
               href="https://github.com/CoderAnimeshSingh"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-foreground/60 hover:text-foreground text-sm transition-colors duration-300"
+              className="text-foreground/60 hover:text-foreground text-sm transition-colors"
             >
               GitHub
             </a>

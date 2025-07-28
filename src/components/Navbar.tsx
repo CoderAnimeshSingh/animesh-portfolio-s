@@ -1,8 +1,8 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
-import { Menu, Sun, Moon, Download } from 'lucide-react';
+import { Menu, Sun, Moon } from 'lucide-react';
 import { useTheme } from '../hooks/use-theme';
-import { RESUME_PATH, RESUME_DOWNLOAD_NAME, NAV_ITEMS } from '../lib/constants';
+import { NAV_ITEMS } from '../lib/constants';
 import { NavItem } from '../lib/types';
 
 const Navbar = () => {
@@ -54,23 +54,14 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Theme Toggle & Resume Button */}
+          {/* Theme Toggle */}
           <div className="flex items-center space-x-4">
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors duration-300"
+              className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
             >
               {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
             </button>
-            
-            <a
-              href={RESUME_PATH}
-              download={RESUME_DOWNLOAD_NAME}
-              className="hidden sm:flex items-center space-x-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded-lg hover:scale-105 transition-transform duration-300"
-            >
-              <Download size={16} />
-              <span>Resume</span>
-            </a>
 
             {/* Mobile menu button */}
             <button
@@ -91,19 +82,11 @@ const Navbar = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="block w-full text-left px-3 py-2 text-foreground/80 hover:text-foreground hover:bg-secondary/50 rounded-md transition-colors duration-300"
+                  className="block w-full text-left px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
                 >
                   {item.label}
                 </button>
               ))}
-              <a
-                href={RESUME_PATH}
-                download={RESUME_DOWNLOAD_NAME}
-                className="flex items-center space-x-2 px-3 py-2 text-blue-500 hover:bg-secondary/50 rounded-md transition-colors duration-300"
-              >
-                <Download size={16} />
-                <span>Download Resume</span>
-              </a>
             </div>
           </div>
         )}
