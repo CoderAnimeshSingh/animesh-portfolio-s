@@ -99,7 +99,7 @@ const Contact = () => {
 
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Contact Form - Mobile Responsive */}
-          <div className="bg-background/80 backdrop-blur-sm border border-border rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-lg">
+          <div className="bg-background/80 backdrop-blur-sm border border-border rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-lg h-full">
             <div className="flex items-center space-x-3 mb-6 sm:mb-8">
               <div className="p-2 sm:p-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl">
                 <MessageCircle className="text-white" size={20} />
