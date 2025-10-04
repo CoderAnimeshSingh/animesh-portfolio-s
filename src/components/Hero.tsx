@@ -21,10 +21,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16 pb-8">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-gray-900 dark:to-gray-800"></div>
-      
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16 pb-8 z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content - Enhanced Mobile Layout */}

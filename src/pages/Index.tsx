@@ -4,25 +4,22 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import StatsCounter from '../components/StatsCounter';
-
-import Skills from '../components/Skills';
-import Projects from '../components/Projects';
-import TestimonialsCarousel from '../components/TestimonialsCarousel';
+import Skills3D from '../components/Skills3D';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import Scene3D from '../components/Scene3D';
 import { ThemeProvider } from '../context/ThemeContext';
 
 const Index = () => {
   return (
     <ThemeProvider>
-      <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
+      <div className="min-h-screen bg-background text-foreground transition-colors duration-300 relative">
+        <Scene3D />
         <Navbar />
         <Hero />
         <About />
         <StatsCounter />
-        <Skills />
-        <Projects />
-        <TestimonialsCarousel />
+        <Skills3D />
         <Contact />
         <Footer />
       </div>
